@@ -2,7 +2,7 @@
 workflows.
 
 Structures UALIB_1 through UALIB-338 were compiled in either ChemDraw for Excel
-or ChemAxon for MS Excel. The compiled structures, associated identifiers, and 
-bibliogrpahic data were then exported as an SDfile from the Excel plugins. We
+or ChemAxon for Excel. The compiled structures, associated identifiers, and 
+bibliographic data were then exported as an SDfile from the Excel plugins. We
 have included the original data as a tab text file.
 

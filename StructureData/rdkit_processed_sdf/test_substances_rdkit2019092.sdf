@@ -1,0 +1,1402 @@
+
+     RDKit          2D
+
+ 11 11  0  0  0  0  0  0  0  0999 V2000
+    4.2760   -0.0000    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.7760    0.0000    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.2760    0.0000    0.0000 B   0  0  0  0  0  0  0  0  0  0  0  0
+    0.3943    1.2135    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.0323    0.7500    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.5241    0.5932    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.3442    2.2172    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.0323   -0.7500    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.3442   -2.2172    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.5241   -0.5932    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.3943   -1.2135    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+  1  2  3  0
+  2  3  1  0
+  3  4  1  0
+  4  5  1  0
+  5  6  1  0
+  5  7  1  0
+  5  8  1  0
+  8  9  1  0
+  8 10  1  0
+  8 11  1  0
+ 11  3  1  0
+M  END
+>  <PUBCHEM_EXT_DATASOURCE_REGID>  (1) 
+UALIB-270
+
+>  <PUBCHEM_EXT_DATASOURCE_SMILES>  (1) 
+[H]C#CB1OC(C)(C)C(C)(C)O1
+
+>  <PUBCHEM_SUBSTANCE_SYNONYM>  (1) 
+Pinacol ethynylborate
+
+>  <PUBCHEM_SUBSTANCE_COMMENT>  (1) 
+Battle, W. The Synthesis of 5-(Boronic Ester)-Isoxazoles and Their use in Palladium-Catalyzed Cross-Coupling Reactions with Iodobenzene. M.A. Thesis, The University of Alabama, 1995.
+
+>  <PUBCHEM_EXT_SUBSTANCE_URL>  (1) 
+https://search.ebscohost.com/login.aspx?direct=true&db=cat00456a&AN=ua.849024&site=eds-live&scope=site&custid=s4594951&groupid=main&profid=eds&authtype=ip,guest
+
+>  <PUBCHEM_EXT_DATASOURCE_INCHI>  (1) 
+InChI=1S/C8H13BO2/c1-6-9-10-7(2,3)8(4,5)11-9/h1H,2-5H3
+
+$$$$
+
+     RDKit          2D
+
+ 22 24  0  0  0  0  0  0  0  0999 V2000
+    0.8606  -10.1811    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.8606   -8.6811    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.6311   -8.8379    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.3524   -8.8379    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    3.7790   -9.3014    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.0406  -10.3051    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.9625   -7.4676    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+    1.8478   -6.4639    0.0000 B   0  0  0  0  0  0  0  0  0  0  0  0
+    2.0046   -4.9721    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.8899   -3.9684    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.5000   -2.5981    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.7500   -1.2990    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.5000    0.0000    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.7500    1.2990    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.7500    1.2990    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.5000    2.5981    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.7500    3.8971    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.5000    0.0000    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.7500   -1.2990    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.9918   -2.7549    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0
+    3.3037   -4.2221    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+    0.5488   -7.2139    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+  1  2  1  0
+  2  3  1  0
+  2  4  1  0
+  4  5  1  0
+  4  6  1  0
+  4  7  1  0
+  7  8  1  0
+  8  9  1  0
+  9 10  2  0
+ 10 11  1  0
+ 11 12  1  0
+ 12 13  2  0
+ 13 14  1  0
+ 14 15  2  0
+ 15 16  1  0
+ 16 17  1  0
+ 15 18  1  0
+ 18 19  2  0
+ 11 20  2  0
+ 20 21  1  0
+  8 22  1  0
+ 22  2  1  0
+ 21  9  1  0
+ 19 12  1  0
+M  END
+>  <PUBCHEM_EXT_DATASOURCE_REGID>  (2) 
+UALIB-271
+
+>  <PUBCHEM_EXT_DATASOURCE_SMILES>  (2) 
+CC1(C)C(C)(C)OB(C2=CC(C3=CC=C(OC)C=C3)=NO2)O1
+
+>  <PUBCHEM_SUBSTANCE_SYNONYM>  (2) 
+3-(4’Methoxyphenyl)-5-(pinacolboronate)-isoxazole
+
+>  <PUBCHEM_SUBSTANCE_COMMENT>  (2) 
+Battle, W. The Synthesis of 5-(Boronic Ester)-Isoxazoles and Their use in Palladium-Catalyzed Cross-Coupling Reactions with Iodobenzene. M.A. Thesis, The University of Alabama, 1995.
+
+>  <PUBCHEM_EXT_SUBSTANCE_URL>  (2) 
+https://search.ebscohost.com/login.aspx?direct=true&db=cat00456a&AN=ua.849024&site=eds-live&scope=site&custid=s4594951&groupid=main&profid=eds&authtype=ip,guest
+
+>  <PUBCHEM_EXT_DATASOURCE_INCHI>  (2) 
+InChI=1S/C16H20BNO4/c1-15(2)16(3,4)22-17(21-15)14-10-13(18-20-14)11-6-8-12(19-5)9-7-11/h6-10H,1-5H3
+
+$$$$
+
+     RDKit          2D
+
+ 21 23  0  0  0  0  0  0  0  0999 V2000
+    0.8606  -10.1811    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.8606   -8.6811    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.6311   -8.8379    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.3524   -8.8379    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    3.7790   -9.3014    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.0406  -10.3051    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.9625   -7.4676    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+    1.8478   -6.4639    0.0000 B   0  0  0  0  0  0  0  0  0  0  0  0
+    2.0046   -4.9721    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.8899   -3.9684    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.5000   -2.5981    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.7500   -1.2990    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.5000    0.0000    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.7500    1.2990    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.7500    1.2990    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.5000    2.5981    0.0000 Br  0  0  0  0  0  0  0  0  0  0  0  0
+   -1.5000    0.0000    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.7500   -1.2990    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.9918   -2.7549    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0
+    3.3037   -4.2221    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+    0.5488   -7.2139    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+  1  2  1  0
+  2  3  1  0
+  2  4  1  0
+  4  5  1  0
+  4  6  1  0
+  4  7  1  0
+  7  8  1  0
+  8  9  1  0
+  9 10  2  0
+ 10 11  1  0
+ 11 12  1  0
+ 12 13  2  0
+ 13 14  1  0
+ 14 15  2  0
+ 15 16  1  0
+ 15 17  1  0
+ 17 18  2  0
+ 11 19  2  0
+ 19 20  1  0
+  8 21  1  0
+ 21  2  1  0
+ 20  9  1  0
+ 18 12  1  0
+M  END
+>  <PUBCHEM_EXT_DATASOURCE_REGID>  (3) 
+UALIB-272
+
+>  <PUBCHEM_EXT_DATASOURCE_SMILES>  (3) 
+CC1(C)C(C)(C)OB(C2=CC(C3=CC=C(Br)C=C3)=NO2)O1
+
+>  <PUBCHEM_SUBSTANCE_SYNONYM>  (3) 
+3-(4’-Bromophenyl)-5-(pinacolboronate)-isoxazole
+
+>  <PUBCHEM_SUBSTANCE_COMMENT>  (3) 
+Battle, W. The Synthesis of 5-(Boronic Ester)-Isoxazoles and Their use in Palladium-Catalyzed Cross-Coupling Reactions with Iodobenzene. M.A. Thesis, The University of Alabama, 1995.
+
+>  <PUBCHEM_EXT_SUBSTANCE_URL>  (3) 
+https://search.ebscohost.com/login.aspx?direct=true&db=cat00456a&AN=ua.849024&site=eds-live&scope=site&custid=s4594951&groupid=main&profid=eds&authtype=ip,guest
+
+>  <PUBCHEM_EXT_DATASOURCE_INCHI>  (3) 
+InChI=1S/C15H17BBrNO3/c1-14(2)15(3,4)21-16(20-14)13-9-12(18-19-13)10-5-7-11(17)8-6-10/h5-9H,1-4H3
+
+$$$$
+
+     RDKit          2D
+
+ 23 25  0  0  0  0  0  0  0  0999 V2000
+   -6.1368   -9.7330    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -4.8377   -8.9830    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -5.7194   -7.7695    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -4.2276  -10.3533    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -3.9158  -11.8205    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -5.6542  -10.8168    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.7358  -10.1965    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.4240   -8.7293    0.0000 B   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.0537   -8.1192    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.7418   -6.6520    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.7500   -6.4952    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.5000   -5.1962    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.7500   -3.8971    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+    1.5000   -2.5981    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.7500   -1.2990    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.5000    0.0000    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.7500    1.2990    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.7500    1.2990    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.5000    0.0000    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.7500   -1.2990    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.3601   -7.8655    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0
+    0.2454   -8.8692    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+   -3.7230   -7.9793    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+  1  2  1  0
+  2  3  1  0
+  2  4  1  0
+  4  5  1  0
+  4  6  1  0
+  4  7  1  0
+  7  8  1  0
+  8  9  1  0
+  9 10  2  0
+ 10 11  1  0
+ 11 12  1  0
+ 12 13  1  0
+ 13 14  1  0
+ 14 15  1  0
+ 15 16  2  0
+ 16 17  1  0
+ 17 18  2  0
+ 18 19  1  0
+ 19 20  2  0
+ 11 21  2  0
+ 21 22  1  0
+  8 23  1  0
+ 23  2  1  0
+ 22  9  1  0
+ 20 15  1  0
+M  END
+>  <PUBCHEM_EXT_DATASOURCE_REGID>  (4) 
+UALIB-273
+
+>  <PUBCHEM_EXT_DATASOURCE_SMILES>  (4) 
+CC1(C)C(C)(C)OB(C2=CC(COCC3=CC=CC=C3)=NO2)O1
+
+>  <PUBCHEM_SUBSTANCE_SYNONYM>  (4) 
+3-(Benzyloxy)methyl-5-(pinacolboronate)-isoxazole
+
+>  <PUBCHEM_SUBSTANCE_COMMENT>  (4) 
+Battle, W. The Synthesis of 5-(Boronic Ester)-Isoxazoles and Their use in Palladium-Catalyzed Cross-Coupling Reactions with Iodobenzene. M.A. Thesis, The University of Alabama, 1995.
+
+>  <PUBCHEM_EXT_SUBSTANCE_URL>  (4) 
+https://search.ebscohost.com/login.aspx?direct=true&db=cat00456a&AN=ua.849024&site=eds-live&scope=site&custid=s4594951&groupid=main&profid=eds&authtype=ip,guest
+
+>  <PUBCHEM_EXT_DATASOURCE_INCHI>  (4) 
+InChI=1S/C17H22BNO4/c1-16(2)17(3,4)23-18(22-16)15-10-14(19-21-15)12-20-11-13-8-6-5-7-9-13/h5-10H,11-12H2,1-4H3
+
+$$$$
+
+     RDKit          2D
+
+ 19 20  0  0  0  0  0  0  0  0999 V2000
+    2.3907    1.0037    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.2760    0.0000    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.3907   -1.0037    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.3943    1.2135    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.2158    2.5838    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.6933    1.9635    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.0323    0.7500    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.0323   -0.7500    0.0000 B   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.2458   -1.6317    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.2458   -3.1317    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -3.6724   -3.5952    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -4.1359   -5.0218    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -5.6031   -5.3337    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+   -6.0667   -6.7602    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -7.5339   -7.0721    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -3.1322   -6.1365    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+   -4.5541   -2.3817    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0
+   -3.6724   -1.1682    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+    0.3943   -1.2135    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+  1  2  1  0
+  2  3  1  0
+  2  4  1  0
+  4  5  1  0
+  4  6  1  0
+  4  7  1  0
+  7  8  1  0
+  8  9  1  0
+  9 10  2  0
+ 10 11  1  0
+ 11 12  1  0
+ 12 13  1  0
+ 13 14  1  0
+ 14 15  1  0
+ 12 16  2  0
+ 11 17  2  0
+ 17 18  1  0
+  8 19  1  0
+ 19  2  1  0
+ 18  9  1  0
+M  END
+>  <PUBCHEM_EXT_DATASOURCE_REGID>  (5) 
+UALIB-274
+
+>  <PUBCHEM_EXT_DATASOURCE_SMILES>  (5) 
+CC1(C)C(C)(C)OB(C2=CC(C(OCC)=O)=NO2)O1
+
+>  <PUBCHEM_SUBSTANCE_SYNONYM>  (5) 
+3-Ethyloxycarbonyl-5-(pinacolboronate)-isoxazole
+
+>  <PUBCHEM_SUBSTANCE_COMMENT>  (5) 
+Battle, W. The Synthesis of 5-(Boronic Ester)-Isoxazoles and Their use in Palladium-Catalyzed Cross-Coupling Reactions with Iodobenzene. M.A. Thesis, The University of Alabama, 1995.
+
+>  <PUBCHEM_EXT_SUBSTANCE_URL>  (5) 
+https://search.ebscohost.com/login.aspx?direct=true&db=cat00456a&AN=ua.849024&site=eds-live&scope=site&custid=s4594951&groupid=main&profid=eds&authtype=ip,guest
+
+>  <PUBCHEM_EXT_DATASOURCE_INCHI>  (5) 
+InChI=1S/C12H18BNO5/c1-6-16-10(15)8-7-9(17-14-8)13-18-11(2,3)12(4,5)19-13/h7H,6H2,1-5H3
+
+$$$$
+
+     RDKit          2D
+
+ 15 16  0  0  0  0  0  0  0  0999 V2000
+    2.3907    1.0037    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.2760    0.0000    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.3907   -1.0037    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.3943    1.2135    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.2158    2.5838    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.6933    1.9635    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.0323    0.7500    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.0323   -0.7500    0.0000 B   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.2458   -1.6317    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.2458   -3.1317    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -3.6724   -3.5952    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -4.1359   -5.0218    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -4.5541   -2.3817    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0
+   -3.6724   -1.1682    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+    0.3943   -1.2135    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+  1  2  1  0
+  2  3  1  0
+  2  4  1  0
+  4  5  1  0
+  4  6  1  0
+  4  7  1  0
+  7  8  1  0
+  8  9  1  0
+  9 10  2  0
+ 10 11  1  0
+ 11 12  1  0
+ 11 13  2  0
+ 13 14  1  0
+  8 15  1  0
+ 15  2  1  0
+ 14  9  1  0
+M  END
+>  <PUBCHEM_EXT_DATASOURCE_REGID>  (6) 
+UALIB-275
+
+>  <PUBCHEM_EXT_DATASOURCE_SMILES>  (6) 
+CC1(C)C(C)(C)OB(C2=CC(C)=NO2)O1
+
+>  <PUBCHEM_SUBSTANCE_SYNONYM>  (6) 
+3-Methyl-5-(pinacolboronate)-isoxazole
+
+>  <PUBCHEM_SUBSTANCE_COMMENT>  (6) 
+Battle, W. The Synthesis of 5-(Boronic Ester)-Isoxazoles and Their use in Palladium-Catalyzed Cross-Coupling Reactions with Iodobenzene. M.A. Thesis, The University of Alabama, 1995.
+
+>  <PUBCHEM_EXT_SUBSTANCE_URL>  (6) 
+https://search.ebscohost.com/login.aspx?direct=true&db=cat00456a&AN=ua.849024&site=eds-live&scope=site&custid=s4594951&groupid=main&profid=eds&authtype=ip,guest
+
+>  <PUBCHEM_EXT_DATASOURCE_INCHI>  (6) 
+InChI=1S/C10H16BNO3/c1-7-6-8(13-12-7)11-14-9(2,3)10(4,5)15-11/h6H,1-5H3
+
+$$$$
+
+     RDKit          2D
+
+ 16 17  0  0  0  0  0  0  0  0999 V2000
+    2.3907    1.0037    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.2760    0.0000    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.3907   -1.0037    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.3943    1.2135    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.2158    2.5838    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.6933    1.9635    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.0323    0.7500    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.0323   -0.7500    0.0000 B   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.2458   -1.6317    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.2458   -3.1317    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -3.6724   -3.5952    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -4.1359   -5.0218    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -5.6031   -5.3337    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -4.5541   -2.3817    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0
+   -3.6724   -1.1682    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+    0.3943   -1.2135    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+  1  2  1  0
+  2  3  1  0
+  2  4  1  0
+  4  5  1  0
+  4  6  1  0
+  4  7  1  0
+  7  8  1  0
+  8  9  1  0
+  9 10  2  0
+ 10 11  1  0
+ 11 12  1  0
+ 12 13  1  0
+ 11 14  2  0
+ 14 15  1  0
+  8 16  1  0
+ 16  2  1  0
+ 15  9  1  0
+M  END
+>  <PUBCHEM_EXT_DATASOURCE_REGID>  (7) 
+UALIB-276
+
+>  <PUBCHEM_EXT_DATASOURCE_SMILES>  (7) 
+CC1(C)C(C)(C)OB(C2=CC(CC)=NO2)O1
+
+>  <PUBCHEM_SUBSTANCE_SYNONYM>  (7) 
+3-Ethyl-5-(pinacolboronate)-isoxazole
+
+>  <PUBCHEM_SUBSTANCE_COMMENT>  (7) 
+Battle, W. The Synthesis of 5-(Boronic Ester)-Isoxazoles and Their use in Palladium-Catalyzed Cross-Coupling Reactions with Iodobenzene. M.A. Thesis, The University of Alabama, 1995.
+
+>  <PUBCHEM_EXT_SUBSTANCE_URL>  (7) 
+https://search.ebscohost.com/login.aspx?direct=true&db=cat00456a&AN=ua.849024&site=eds-live&scope=site&custid=s4594951&groupid=main&profid=eds&authtype=ip,guest
+
+>  <PUBCHEM_EXT_DATASOURCE_INCHI>  (7) 
+InChI=1S/C11H18BNO3/c1-6-8-7-9(14-13-8)12-15-10(2,3)11(4,5)16-12/h7H,6H2,1-5H3
+
+$$$$
+
+     RDKit          2D
+
+ 21 23  0  0  0  0  0  0  0  0999 V2000
+    1.9598    0.0000    0.0000 N   0  0  0  0  0  4  0  0  0  0  0  0
+    1.3858   -1.3858    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.0000   -1.9598    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.3858   -1.3858    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.9598    0.0000    0.0000 B   0  0  0  0  0  4  0  0  0  0  0  0
+   -1.3858    1.3858    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+    0.0000    1.9598    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.3858    1.3858    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -3.4598    0.0000    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -4.3415   -1.2135    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -5.7681   -0.7500    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -6.9816   -1.6317    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -8.3520   -1.0216    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -9.5655   -1.9033    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -9.4087   -3.3950    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+  -10.6222   -4.2767    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+  -11.9925   -3.6666    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -8.0384   -4.0051    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -6.8248   -3.1235    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -5.7681    0.7500    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0
+   -4.3415    1.2135    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+  1  2  1  0
+  2  3  1  0
+  3  4  1  0
+  4  5  1  0
+  5  6  1  0
+  6  7  1  0
+  7  8  1  0
+  5  9  1  0
+  9 10  2  0
+ 10 11  1  0
+ 11 12  1  0
+ 12 13  2  0
+ 13 14  1  0
+ 14 15  2  0
+ 15 16  1  0
+ 16 17  1  0
+ 15 18  1  0
+ 18 19  2  0
+ 11 20  2  0
+ 20 21  1  0
+  8  1  1  0
+ 21  9  1  0
+ 19 12  1  0
+M  CHG  2   1   1   5  -1
+M  END
+>  <PUBCHEM_EXT_DATASOURCE_REGID>  (8) 
+UALIB-277
+
+>  <PUBCHEM_EXT_DATASOURCE_SMILES>  (8) 
+[H][NH+]1CCO[BH-](OCC1)C2=CC(C3=CC=C(OC)C=C3)=NO2
+
+>  <PUBCHEM_SUBSTANCE_SYNONYM>  (8) 
+3-(4’-Methyloxyphenyl)-5-(diethanolaminoboroante)-isoxazole
+
+>  <PUBCHEM_SUBSTANCE_COMMENT>  (8) 
+Battle, W. The Synthesis of 5-(Boronic Ester)-Isoxazoles and Their use in Palladium-Catalyzed Cross-Coupling Reactions with Iodobenzene. M.A. Thesis, The University of Alabama, 1995.
+
+>  <PUBCHEM_EXT_SUBSTANCE_URL>  (8) 
+https://search.ebscohost.com/login.aspx?direct=true&db=cat00456a&AN=ua.849024&site=eds-live&scope=site&custid=s4594951&groupid=main&profid=eds&authtype=ip,guest
+
+>  <PUBCHEM_EXT_DATASOURCE_INCHI>  (8) 
+InChI=1S/C14H18BN2O4/c1-18-12-4-2-11(3-5-12)13-10-14(21-17-13)15-19-8-6-16-7-9-20-15/h2-5,10,15-16H,6-9H2,1H3/q-1/p+1
+
+$$$$
+
+     RDKit          2D
+
+ 20 22  0  0  0  0  0  0  0  0999 V2000
+    1.9598    0.0000    0.0000 N   0  0  0  0  0  4  0  0  0  0  0  0
+    1.3858   -1.3858    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.0000   -1.9598    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.3858   -1.3858    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.9598    0.0000    0.0000 B   0  0  0  0  0  4  0  0  0  0  0  0
+   -1.3858    1.3858    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+    0.0000    1.9598    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.3858    1.3858    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -3.4598    0.0000    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -4.3415   -1.2135    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -5.7681   -0.7500    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -6.9816   -1.6317    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -8.3520   -1.0216    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -9.5655   -1.9033    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -9.4087   -3.3950    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+  -10.6222   -4.2767    0.0000 Br  0  0  0  0  0  0  0  0  0  0  0  0
+   -8.0384   -4.0051    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -6.8248   -3.1235    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -5.7681    0.7500    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0
+   -4.3415    1.2135    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+  1  2  1  0
+  2  3  1  0
+  3  4  1  0
+  4  5  1  0
+  5  6  1  0
+  6  7  1  0
+  7  8  1  0
+  5  9  1  0
+  9 10  2  0
+ 10 11  1  0
+ 11 12  1  0
+ 12 13  2  0
+ 13 14  1  0
+ 14 15  2  0
+ 15 16  1  0
+ 15 17  1  0
+ 17 18  2  0
+ 11 19  2  0
+ 19 20  1  0
+  8  1  1  0
+ 20  9  1  0
+ 18 12  1  0
+M  CHG  2   1   1   5  -1
+M  END
+>  <PUBCHEM_EXT_DATASOURCE_REGID>  (9) 
+UALIB-278
+
+>  <PUBCHEM_EXT_DATASOURCE_SMILES>  (9) 
+[H][NH+]1CCO[BH-](OCC1)C2=CC(C3=CC=C(Br)C=C3)=NO2
+
+>  <PUBCHEM_SUBSTANCE_SYNONYM>  (9) 
+3-(4’-Bromophenyl)-5-(diethanolaminoboronate)-isoxazole
+
+>  <PUBCHEM_SUBSTANCE_COMMENT>  (9) 
+Battle, W. The Synthesis of 5-(Boronic Ester)-Isoxazoles and Their use in Palladium-Catalyzed Cross-Coupling Reactions with Iodobenzene. M.A. Thesis, The University of Alabama, 1995.
+
+>  <PUBCHEM_EXT_SUBSTANCE_URL>  (9) 
+https://search.ebscohost.com/login.aspx?direct=true&db=cat00456a&AN=ua.849024&site=eds-live&scope=site&custid=s4594951&groupid=main&profid=eds&authtype=ip,guest
+
+>  <PUBCHEM_EXT_DATASOURCE_INCHI>  (9) 
+InChI=1S/C13H15BBrN2O3/c15-11-3-1-10(2-4-11)12-9-13(20-17-12)14-18-7-5-16-6-8-19-14/h1-4,9,14,16H,5-8H2/q-1/p+1
+
+$$$$
+
+     RDKit          2D
+
+ 22 24  0  0  0  0  0  0  0  0999 V2000
+    1.9598    0.0000    0.0000 N   0  0  0  0  0  4  0  0  0  0  0  0
+    1.3858   -1.3858    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.0000   -1.9598    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.3858   -1.3858    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.9598    0.0000    0.0000 B   0  0  0  0  0  4  0  0  0  0  0  0
+   -1.3858    1.3858    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+    0.0000    1.9598    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.3858    1.3858    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -3.4598    0.0000    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -4.3415   -1.2135    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -5.7681   -0.7500    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -6.9816   -1.6317    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -8.3520   -1.0216    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+   -9.5655   -1.9033    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+  -10.9358   -1.2931    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+  -11.0926    0.1986    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+  -12.4629    0.8087    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+  -13.6764   -0.0729    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+  -13.5196   -1.5647    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+  -12.1493   -2.1748    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -5.7681    0.7500    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0
+   -4.3415    1.2135    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+  1  2  1  0
+  2  3  1  0
+  3  4  1  0
+  4  5  1  0
+  5  6  1  0
+  6  7  1  0
+  7  8  1  0
+  5  9  1  0
+  9 10  2  0
+ 10 11  1  0
+ 11 12  1  0
+ 12 13  1  0
+ 13 14  1  0
+ 14 15  1  0
+ 15 16  2  0
+ 16 17  1  0
+ 17 18  2  0
+ 18 19  1  0
+ 19 20  2  0
+ 11 21  2  0
+ 21 22  1  0
+  8  1  1  0
+ 22  9  1  0
+ 20 15  1  0
+M  CHG  2   1   1   5  -1
+M  END
+>  <PUBCHEM_EXT_DATASOURCE_REGID>  (10) 
+UALIB-279
+
+>  <PUBCHEM_EXT_DATASOURCE_SMILES>  (10) 
+[H][NH+]1CCO[BH-](OCC1)C2=CC(COCC3=CC=CC=C3)=NO2
+
+>  <PUBCHEM_SUBSTANCE_SYNONYM>  (10) 
+3-(Benzyloxy)methyl-5-(diethanolaminoboronate)-isoxazole
+
+>  <PUBCHEM_SUBSTANCE_COMMENT>  (10) 
+Battle, W. The Synthesis of 5-(Boronic Ester)-Isoxazoles and Their use in Palladium-Catalyzed Cross-Coupling Reactions with Iodobenzene. M.A. Thesis, The University of Alabama, 1995.
+
+>  <PUBCHEM_EXT_SUBSTANCE_URL>  (10) 
+https://search.ebscohost.com/login.aspx?direct=true&db=cat00456a&AN=ua.849024&site=eds-live&scope=site&custid=s4594951&groupid=main&profid=eds&authtype=ip,guest
+
+>  <PUBCHEM_EXT_DATASOURCE_INCHI>  (10) 
+InChI=1S/C15H20BN2O4/c1-2-4-13(5-3-1)11-19-12-14-10-15(22-18-14)16-20-8-6-17-7-9-21-16/h1-5,10,16-17H,6-9,11-12H2/q-1/p+1
+
+$$$$
+
+     RDKit          2D
+
+ 18 19  0  0  0  0  0  0  0  0999 V2000
+    1.9598    0.0000    0.0000 N   0  0  0  0  0  4  0  0  0  0  0  0
+    1.3858   -1.3858    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.0000   -1.9598    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.3858   -1.3858    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.9598    0.0000    0.0000 B   0  0  0  0  0  4  0  0  0  0  0  0
+   -1.3858    1.3858    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+    0.0000    1.9598    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.3858    1.3858    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -3.4598    0.0000    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -4.3415   -1.2135    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -5.7681   -0.7500    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -6.9816   -1.6317    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -8.3520   -1.0216    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+   -9.5655   -1.9033    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+  -10.9358   -1.2931    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -6.8248   -3.1235    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+   -5.7681    0.7500    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0
+   -4.3415    1.2135    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+  1  2  1  0
+  2  3  1  0
+  3  4  1  0
+  4  5  1  0
+  5  6  1  0
+  6  7  1  0
+  7  8  1  0
+  5  9  1  0
+  9 10  2  0
+ 10 11  1  0
+ 11 12  1  0
+ 12 13  1  0
+ 13 14  1  0
+ 14 15  1  0
+ 12 16  2  0
+ 11 17  2  0
+ 17 18  1  0
+  8  1  1  0
+ 18  9  1  0
+M  CHG  2   1   1   5  -1
+M  END
+>  <PUBCHEM_EXT_DATASOURCE_REGID>  (11) 
+UALIB-280
+
+>  <PUBCHEM_EXT_DATASOURCE_SMILES>  (11) 
+[H][NH+]1CCO[BH-](OCC1)C2=CC(C(OCC)=O)=NO2
+
+>  <PUBCHEM_SUBSTANCE_SYNONYM>  (11) 
+3-Ethoxycarbonyl-5-(diethanolaminboronate)-isoxazole
+
+>  <PUBCHEM_SUBSTANCE_COMMENT>  (11) 
+Battle, W. The Synthesis of 5-(Boronic Ester)-Isoxazoles and Their use in Palladium-Catalyzed Cross-Coupling Reactions with Iodobenzene. M.A. Thesis, The University of Alabama, 1995.
+
+>  <PUBCHEM_EXT_SUBSTANCE_URL>  (11) 
+https://search.ebscohost.com/login.aspx?direct=true&db=cat00456a&AN=ua.849024&site=eds-live&scope=site&custid=s4594951&groupid=main&profid=eds&authtype=ip,guest
+
+>  <PUBCHEM_EXT_DATASOURCE_INCHI>  (11) 
+InChI=1S/C10H16BN2O5/c1-2-15-10(14)8-7-9(18-13-8)11-16-5-3-12-4-6-17-11/h7,11-12H,2-6H2,1H3/q-1/p+1
+
+$$$$
+
+     RDKit          2D
+
+ 14 15  0  0  0  0  0  0  0  0999 V2000
+    1.9598    0.0000    0.0000 N   0  0  0  0  0  4  0  0  0  0  0  0
+    1.3858   -1.3858    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.0000   -1.9598    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.3858   -1.3858    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.9598    0.0000    0.0000 B   0  0  0  0  0  4  0  0  0  0  0  0
+   -1.3858    1.3858    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+    0.0000    1.9598    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.3858    1.3858    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -3.4598    0.0000    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -4.3415   -1.2135    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -5.7681   -0.7500    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -6.9816   -1.6317    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -5.7681    0.7500    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0
+   -4.3415    1.2135    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+  1  2  1  0
+  2  3  1  0
+  3  4  1  0
+  4  5  1  0
+  5  6  1  0
+  6  7  1  0
+  7  8  1  0
+  5  9  1  0
+  9 10  2  0
+ 10 11  1  0
+ 11 12  1  0
+ 11 13  2  0
+ 13 14  1  0
+  8  1  1  0
+ 14  9  1  0
+M  CHG  2   1   1   5  -1
+M  END
+>  <PUBCHEM_EXT_DATASOURCE_REGID>  (12) 
+UALIB-281
+
+>  <PUBCHEM_EXT_DATASOURCE_SMILES>  (12) 
+[H][NH+]1CCO[BH-](OCC1)C2=CC(C)=NO2
+
+>  <PUBCHEM_SUBSTANCE_SYNONYM>  (12) 
+3-Methyl-5-(diethanolaminoboronate)-isoxazole
+
+>  <PUBCHEM_SUBSTANCE_COMMENT>  (12) 
+Battle, W. The Synthesis of 5-(Boronic Ester)-Isoxazoles and Their use in Palladium-Catalyzed Cross-Coupling Reactions with Iodobenzene. M.A. Thesis, The University of Alabama, 1995.
+
+>  <PUBCHEM_EXT_SUBSTANCE_URL>  (12) 
+https://search.ebscohost.com/login.aspx?direct=true&db=cat00456a&AN=ua.849024&site=eds-live&scope=site&custid=s4594951&groupid=main&profid=eds&authtype=ip,guest
+
+>  <PUBCHEM_EXT_DATASOURCE_INCHI>  (12) 
+InChI=1S/C8H14BN2O3/c1-7-6-8(14-11-7)9-12-4-2-10-3-5-13-9/h6,9-10H,2-5H2,1H3/q-1/p+1
+
+$$$$
+
+     RDKit          2D
+
+ 15 16  0  0  0  0  0  0  0  0999 V2000
+    1.9598    0.0000    0.0000 N   0  0  0  0  0  4  0  0  0  0  0  0
+    1.3858   -1.3858    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.0000   -1.9598    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.3858   -1.3858    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.9598    0.0000    0.0000 B   0  0  0  0  0  4  0  0  0  0  0  0
+   -1.3858    1.3858    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+    0.0000    1.9598    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.3858    1.3858    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -3.4598    0.0000    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -4.3415   -1.2135    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -5.7681   -0.7500    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -6.9816   -1.6317    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -8.3520   -1.0216    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -5.7681    0.7500    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0
+   -4.3415    1.2135    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+  1  2  1  0
+  2  3  1  0
+  3  4  1  0
+  4  5  1  0
+  5  6  1  0
+  6  7  1  0
+  7  8  1  0
+  5  9  1  0
+  9 10  2  0
+ 10 11  1  0
+ 11 12  1  0
+ 12 13  1  0
+ 11 14  2  0
+ 14 15  1  0
+  8  1  1  0
+ 15  9  1  0
+M  CHG  2   1   1   5  -1
+M  END
+>  <PUBCHEM_EXT_DATASOURCE_REGID>  (13) 
+UALIB-282
+
+>  <PUBCHEM_EXT_DATASOURCE_SMILES>  (13) 
+[H][NH+]1CCO[BH-](OCC1)C2=CC(CC)=NO2
+
+>  <PUBCHEM_SUBSTANCE_SYNONYM>  (13) 
+3-Ethyl-5-(diethanolaminoboroante)-isoxazole
+
+>  <PUBCHEM_SUBSTANCE_COMMENT>  (13) 
+Battle, W. The Synthesis of 5-(Boronic Ester)-Isoxazoles and Their use in Palladium-Catalyzed Cross-Coupling Reactions with Iodobenzene. M.A. Thesis, The University of Alabama, 1995.
+
+>  <PUBCHEM_EXT_SUBSTANCE_URL>  (13) 
+https://search.ebscohost.com/login.aspx?direct=true&db=cat00456a&AN=ua.849024&site=eds-live&scope=site&custid=s4594951&groupid=main&profid=eds&authtype=ip,guest
+
+>  <PUBCHEM_EXT_DATASOURCE_INCHI>  (13) 
+InChI=1S/C9H16BN2O3/c1-2-8-7-9(15-12-8)10-13-5-3-11-4-6-14-10/h7,10-11H,2-6H2,1H3/q-1/p+1
+
+$$$$
+
+     RDKit          2D
+
+ 19 21  0  0  0  0  0  0  0  0999 V2000
+    3.7500   -1.2990    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    3.0000    0.0000    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+    1.5000    0.0000    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.7500   -1.2990    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.7500   -1.2990    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.7500    1.2990    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.7500    1.2990    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.5000    0.0000    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -3.0000    0.0000    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -3.8817   -1.2135    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0
+   -5.3083   -0.7500    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+   -5.3083    0.7500    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -6.5218    1.6317    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -6.3650    3.1235    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -7.5785    4.0051    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -8.9488    3.3950    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -9.1056    1.9033    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -7.8921    1.0216    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -3.8817    1.2135    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+  1  2  1  0
+  2  3  1  0
+  3  4  2  0
+  4  5  1  0
+  3  6  1  0
+  6  7  2  0
+  7  8  1  0
+  8  9  1  0
+  9 10  2  0
+ 10 11  1  0
+ 11 12  1  0
+ 12 13  1  0
+ 13 14  2  0
+ 14 15  1  0
+ 15 16  2  0
+ 16 17  1  0
+ 17 18  2  0
+ 12 19  2  0
+  8  5  2  0
+ 19  9  1  0
+ 18 13  1  0
+M  END
+>  <PUBCHEM_EXT_DATASOURCE_REGID>  (14) 
+UALIB-283
+
+>  <PUBCHEM_EXT_DATASOURCE_SMILES>  (14) 
+COC(C=C1)=CC=C1C2=NOC(C3=CC=CC=C3)=C2
+
+>  <PUBCHEM_SUBSTANCE_SYNONYM>  (14) 
+3-(4’-Methoxyphenyl)-5-phenylisoxazole
+
+>  <PUBCHEM_SUBSTANCE_COMMENT>  (14) 
+Battle, W. The Synthesis of 5-(Boronic Ester)-Isoxazoles and Their use in Palladium-Catalyzed Cross-Coupling Reactions with Iodobenzene. M.A. Thesis, The University of Alabama, 1995.
+
+>  <PUBCHEM_EXT_SUBSTANCE_URL>  (14) 
+https://search.ebscohost.com/login.aspx?direct=true&db=cat00456a&AN=ua.849024&site=eds-live&scope=site&custid=s4594951&groupid=main&profid=eds&authtype=ip,guest
+
+>  <PUBCHEM_EXT_DATASOURCE_INCHI>  (14) 
+InChI=1S/C16H13NO2/c1-18-14-9-7-12(8-10-14)15-11-16(19-17-15)13-5-3-2-4-6-13/h2-11H,1H3
+
+$$$$
+
+     RDKit          2D
+
+ 18 20  0  0  0  0  0  0  0  0999 V2000
+    3.0000    0.0000    0.0000 Br  0  0  0  0  0  0  0  0  0  0  0  0
+    1.5000    0.0000    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.7500   -1.2990    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.7500   -1.2990    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.7500    1.2990    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.7500    1.2990    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.5000    0.0000    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -3.0000    0.0000    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -3.8817   -1.2135    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0
+   -5.3083   -0.7500    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+   -5.3083    0.7500    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -6.5218    1.6317    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -6.3650    3.1235    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -7.5785    4.0051    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -8.9488    3.3950    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -9.1056    1.9033    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -7.8921    1.0216    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -3.8817    1.2135    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+  1  2  1  0
+  2  3  2  0
+  3  4  1  0
+  2  5  1  0
+  5  6  2  0
+  6  7  1  0
+  7  8  1  0
+  8  9  2  0
+  9 10  1  0
+ 10 11  1  0
+ 11 12  1  0
+ 12 13  2  0
+ 13 14  1  0
+ 14 15  2  0
+ 15 16  1  0
+ 16 17  2  0
+ 11 18  2  0
+  7  4  2  0
+ 18  8  1  0
+ 17 12  1  0
+M  END
+>  <PUBCHEM_EXT_DATASOURCE_REGID>  (15) 
+UALIB-284
+
+>  <PUBCHEM_EXT_DATASOURCE_SMILES>  (15) 
+BrC(C=C1)=CC=C1C2=NOC(C3=CC=CC=C3)=C2
+
+>  <PUBCHEM_SUBSTANCE_SYNONYM>  (15) 
+3-(4’-Bromophenyl)-5-phenylisoxazole
+
+>  <PUBCHEM_SUBSTANCE_COMMENT>  (15) 
+Battle, W. The Synthesis of 5-(Boronic Ester)-Isoxazoles and Their use in Palladium-Catalyzed Cross-Coupling Reactions with Iodobenzene. M.A. Thesis, The University of Alabama, 1995.
+
+>  <PUBCHEM_EXT_SUBSTANCE_URL>  (15) 
+https://search.ebscohost.com/login.aspx?direct=true&db=cat00456a&AN=ua.849024&site=eds-live&scope=site&custid=s4594951&groupid=main&profid=eds&authtype=ip,guest
+
+>  <PUBCHEM_EXT_DATASOURCE_INCHI>  (15) 
+InChI=1S/C15H10BrNO/c16-13-8-6-11(7-9-13)14-10-15(18-17-14)12-4-2-1-3-5-12/h1-10H
+
+$$$$
+
+     RDKit          2D
+
+ 20 22  0  0  0  0  0  0  0  0999 V2000
+    0.7500   -6.4952    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.5000   -5.1962    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.7500   -3.8971    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+    1.5000   -2.5981    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.7500   -1.2990    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.5000    0.0000    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.7500    1.2990    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.7500    1.2990    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.5000    0.0000    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.7500   -1.2990    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.3601   -7.8655    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0
+    0.2454   -8.8692    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.0537   -8.1192    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.4240   -8.7293    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -3.6375   -7.8476    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -5.0078   -8.4577    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -5.1646   -9.9495    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -3.9511  -10.8312    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.5808  -10.2211    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.7418   -6.6520    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+  1  2  1  0
+  2  3  1  0
+  3  4  1  0
+  4  5  1  0
+  5  6  2  0
+  6  7  1  0
+  7  8  2  0
+  8  9  1  0
+  9 10  2  0
+  1 11  2  0
+ 11 12  1  0
+ 12 13  1  0
+ 13 14  1  0
+ 14 15  2  0
+ 15 16  1  0
+ 16 17  2  0
+ 17 18  1  0
+ 18 19  2  0
+ 13 20  2  0
+ 20  1  1  0
+ 10  5  1  0
+ 19 14  1  0
+M  END
+>  <PUBCHEM_EXT_DATASOURCE_REGID>  (16) 
+UALIB-285
+
+>  <PUBCHEM_EXT_DATASOURCE_SMILES>  (16) 
+C1(COCC2=CC=CC=C2)=NOC(C3=CC=CC=C3)=C1
+
+>  <PUBCHEM_SUBSTANCE_SYNONYM>  (16) 
+3-(Benzyloxy)methyl-5-phenylisoxazole
+
+>  <PUBCHEM_SUBSTANCE_COMMENT>  (16) 
+Battle, W. The Synthesis of 5-(Boronic Ester)-Isoxazoles and Their use in Palladium-Catalyzed Cross-Coupling Reactions with Iodobenzene. M.A. Thesis, The University of Alabama, 1995.
+
+>  <PUBCHEM_EXT_SUBSTANCE_URL>  (16) 
+https://search.ebscohost.com/login.aspx?direct=true&db=cat00456a&AN=ua.849024&site=eds-live&scope=site&custid=s4594951&groupid=main&profid=eds&authtype=ip,guest
+
+>  <PUBCHEM_EXT_DATASOURCE_INCHI>  (16) 
+InChI=1S/C17H15NO2/c1-3-7-14(8-4-1)12-19-13-16-11-17(20-18-16)15-9-5-2-6-10-15/h1-11H,12-13H2
+
+$$$$
+
+     RDKit          2D
+
+ 12 13  0  0  0  0  0  0  0  0999 V2000
+    1.8478   -6.4639    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.0046   -4.9721    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    3.3037   -4.2221    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0
+    2.9918   -2.7549    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+    1.5000   -2.5981    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.7500   -1.2990    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.5000    0.0000    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.7500    1.2990    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.7500    1.2990    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.5000    0.0000    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.7500   -1.2990    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.8899   -3.9684    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+  1  2  1  0
+  2  3  2  0
+  3  4  1  0
+  4  5  1  0
+  5  6  1  0
+  6  7  2  0
+  7  8  1  0
+  8  9  2  0
+  9 10  1  0
+ 10 11  2  0
+  5 12  2  0
+ 12  2  1  0
+ 11  6  1  0
+M  END
+>  <PUBCHEM_EXT_DATASOURCE_REGID>  (17) 
+UALIB-286
+
+>  <PUBCHEM_EXT_DATASOURCE_SMILES>  (17) 
+CC1=NOC(C2=CC=CC=C2)=C1
+
+>  <PUBCHEM_SUBSTANCE_SYNONYM>  (17) 
+3-Methyl-5-phenylisoxazole
+
+>  <PUBCHEM_SUBSTANCE_COMMENT>  (17) 
+Battle, W. The Synthesis of 5-(Boronic Ester)-Isoxazoles and Their use in Palladium-Catalyzed Cross-Coupling Reactions with Iodobenzene. M.A. Thesis, The University of Alabama, 1995.
+
+>  <PUBCHEM_EXT_SUBSTANCE_URL>  (17) 
+https://search.ebscohost.com/login.aspx?direct=true&db=cat00456a&AN=ua.849024&site=eds-live&scope=site&custid=s4594951&groupid=main&profid=eds&authtype=ip,guest
+
+>  <PUBCHEM_EXT_DATASOURCE_INCHI>  (17) 
+InChI=1S/C10H9NO/c1-8-7-10(12-11-8)9-5-3-2-4-6-9/h2-7H,1H3
+
+$$$$
+
+     RDKit          2D
+
+ 13 14  0  0  0  0  0  0  0  0999 V2000
+    0.4775   -7.0740    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.8478   -6.4639    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.0046   -4.9721    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    3.3037   -4.2221    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0
+    2.9918   -2.7549    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+    1.5000   -2.5981    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.7500   -1.2990    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.5000    0.0000    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.7500    1.2990    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.7500    1.2990    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.5000    0.0000    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.7500   -1.2990    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.8899   -3.9684    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+  1  2  1  0
+  2  3  1  0
+  3  4  2  0
+  4  5  1  0
+  5  6  1  0
+  6  7  1  0
+  7  8  2  0
+  8  9  1  0
+  9 10  2  0
+ 10 11  1  0
+ 11 12  2  0
+  6 13  2  0
+ 13  3  1  0
+ 12  7  1  0
+M  END
+>  <PUBCHEM_EXT_DATASOURCE_REGID>  (18) 
+UALIB-287
+
+>  <PUBCHEM_EXT_DATASOURCE_SMILES>  (18) 
+CCC1=NOC(C2=CC=CC=C2)=C1
+
+>  <PUBCHEM_SUBSTANCE_SYNONYM>  (18) 
+3-Ethyl-5-phenylisoxazole
+
+>  <PUBCHEM_SUBSTANCE_COMMENT>  (18) 
+Battle, W. The Synthesis of 5-(Boronic Ester)-Isoxazoles and Their use in Palladium-Catalyzed Cross-Coupling Reactions with Iodobenzene. M.A. Thesis, The University of Alabama, 1995.
+
+>  <PUBCHEM_EXT_SUBSTANCE_URL>  (18) 
+https://search.ebscohost.com/login.aspx?direct=true&db=cat00456a&AN=ua.849024&site=eds-live&scope=site&custid=s4594951&groupid=main&profid=eds&authtype=ip,guest
+
+>  <PUBCHEM_EXT_DATASOURCE_INCHI>  (18) 
+InChI=1S/C11H11NO/c1-2-10-8-11(13-12-10)9-6-4-3-5-7-9/h3-8H,2H2,1H3
+
+$$$$
+
+     RDKit          2D
+
+ 19 20  0  0  0  0  0  0  0  0999 V2000
+    4.7302   -8.9547    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    3.3037   -9.4182    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    3.9138  -10.7886    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.9918   -7.9510    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+    1.5000   -7.7942    0.0000 B   0  0  0  0  0  0  0  0  0  0  0  0
+    0.7500   -6.4952    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.5000   -5.1962    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.7500   -3.8971    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+    1.5000   -2.5981    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.7500   -1.2990    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.5000    0.0000    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.7500    1.2990    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.7500    1.2990    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.5000    0.0000    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.7500   -1.2990    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.8899   -9.1645    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+    2.0046  -10.1682    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.8863  -11.3818    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.8899  -11.1719    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+  1  2  1  0
+  2  3  1  0
+  2  4  1  0
+  4  5  1  0
+  5  6  1  0
+  6  7  1  0
+  7  8  1  0
+  8  9  1  0
+  9 10  1  0
+ 10 11  2  0
+ 11 12  1  0
+ 12 13  2  0
+ 13 14  1  0
+ 14 15  2  0
+  5 16  1  0
+ 16 17  1  0
+ 17 18  1  0
+ 17 19  1  0
+ 17  2  1  0
+ 15 10  1  0
+M  END
+>  <PUBCHEM_EXT_DATASOURCE_REGID>  (19) 
+UALIB-288
+
+>  <PUBCHEM_EXT_DATASOURCE_SMILES>  (19) 
+CC1(C)OB(CCOCC2=CC=CC=C2)OC1(C)C
+
+>  <PUBCHEM_SUBSTANCE_SYNONYM>  (19) 
+Pinacol (benzyloxy)ethylboronate
+
+>  <PUBCHEM_SUBSTANCE_COMMENT>  (19) 
+Battle, W. The Synthesis of 5-(Boronic Ester)-Isoxazoles and Their use in Palladium-Catalyzed Cross-Coupling Reactions with Iodobenzene. M.A. Thesis, The University of Alabama, 1995.
+
+>  <PUBCHEM_EXT_SUBSTANCE_URL>  (19) 
+https://search.ebscohost.com/login.aspx?direct=true&db=cat00456a&AN=ua.849024&site=eds-live&scope=site&custid=s4594951&groupid=main&profid=eds&authtype=ip,guest
+
+>  <PUBCHEM_EXT_DATASOURCE_INCHI>  (19) 
+InChI=1S/C15H23BO3/c1-14(2)15(3,4)19-16(18-14)10-11-17-12-13-8-6-5-7-9-13/h5-9H,10-12H2,1-4H3
+
+$$$$
+
+     RDKit          2D
+
+ 11 11  0  0  0  0  0  0  0  0999 V2000
+    2.3907    1.0037    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.2760    0.0000    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.3907   -1.0037    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.3943    1.2135    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.0323    0.7500    0.0000 B   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.2458    1.6317    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.0890    3.1235    0.0000 I   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.0323   -0.7500    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+    0.3943   -1.2135    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.6933   -1.9635    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.2158   -2.5838    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+  1  2  1  0
+  2  3  1  0
+  2  4  1  0
+  4  5  1  0
+  5  6  1  0
+  6  7  1  0
+  5  8  1  0
+  8  9  1  0
+  9 10  1  0
+  9 11  1  0
+  9  2  1  0
+M  END
+>  <PUBCHEM_EXT_DATASOURCE_REGID>  (20) 
+UALIB-289
+
+>  <PUBCHEM_EXT_DATASOURCE_SMILES>  (20) 
+CC1(C)OB(CI)OC1(C)C
+
+>  <PUBCHEM_SUBSTANCE_SYNONYM>  (20) 
+Pinacol iodomethaneboronate
+
+>  <PUBCHEM_SUBSTANCE_COMMENT>  (20) 
+Battle, W. The Synthesis of 5-(Boronic Ester)-Isoxazoles and Their use in Palladium-Catalyzed Cross-Coupling Reactions with Iodobenzene. M.A. Thesis, The University of Alabama, 1995.
+
+>  <PUBCHEM_EXT_SUBSTANCE_URL>  (20) 
+https://search.ebscohost.com/login.aspx?direct=true&db=cat00456a&AN=ua.849024&site=eds-live&scope=site&custid=s4594951&groupid=main&profid=eds&authtype=ip,guest
+
+>  <PUBCHEM_EXT_DATASOURCE_INCHI>  (20) 
+InChI=1S/C7H14BIO2/c1-6(2)7(3,4)11-8(5-9)10-6/h5H2,1-4H3
+
+$$$$
+
+     RDKit          2D
+
+ 15 17  0  0  0  0  0  0  0  0999 V2000
+    2.9095   -2.0850    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.5000   -2.5981    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.7500   -1.2990    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.5000    0.0000    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.7500    1.2990    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.7500    1.2990    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.5000    0.0000    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.7500   -1.2990    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.7605   -4.0753    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+    0.3509   -3.5623    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    4.0586   -3.0492    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    5.4681   -2.5362    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    5.7286   -1.0590    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    4.5796   -0.0948    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    3.1700   -0.6078    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+  1  2  1  0
+  2  3  1  0
+  3  4  2  0
+  4  5  1  0
+  5  6  2  0
+  6  7  1  0
+  7  8  2  0
+  2  9  1  0
+  9 10  1  0
+  1 11  2  0
+ 11 12  1  0
+ 12 13  2  0
+ 13 14  1  0
+ 14 15  2  0
+ 15  1  1  0
+ 10  2  1  0
+  8  3  1  0
+M  END
+>  <PUBCHEM_EXT_DATASOURCE_REGID>  (21) 
+UALIB-290
+
+>  <PUBCHEM_EXT_DATASOURCE_SMILES>  (21) 
+C1(C2(C3=CC=CC=C3)OC2)=CC=CC=C1
+
+>  <PUBCHEM_SUBSTANCE_SYNONYM>  (21) 
+2,2'-Diphenyl-oxirane
+
+>  <PUBCHEM_SUBSTANCE_COMMENT>  (21) 
+Battle, W. The Synthesis of 5-(Boronic Ester)-Isoxazoles and Their use in Palladium-Catalyzed Cross-Coupling Reactions with Iodobenzene. M.A. Thesis, The University of Alabama, 1995.
+
+>  <PUBCHEM_EXT_SUBSTANCE_URL>  (21) 
+https://search.ebscohost.com/login.aspx?direct=true&db=cat00456a&AN=ua.849024&site=eds-live&scope=site&custid=s4594951&groupid=main&profid=eds&authtype=ip,guest
+
+>  <PUBCHEM_EXT_DATASOURCE_INCHI>  (21) 
+InChI=1S/C14H12O/c1-3-7-12(8-4-1)14(11-15-14)13-9-5-2-6-10-13/h1-10H,11H2
+
+$$$$
+
+     RDKit          2D
+
+ 10 11  0  0  0  0  0  0  0  0999 V2000
+    2.9095   -2.0850    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.5000   -2.5981    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.7605   -4.0753    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.3509   -3.5623    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+    0.7500   -1.2990    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.5000    0.0000    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.7500    1.2990    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.7500    1.2990    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.5000    0.0000    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.7500   -1.2990    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+  1  2  1  0
+  2  3  1  0
+  3  4  1  0
+  2  5  1  0
+  5  6  2  0
+  6  7  1  0
+  7  8  2  0
+  8  9  1  0
+  9 10  2  0
+  4  2  1  0
+ 10  5  1  0
+M  END
+>  <PUBCHEM_EXT_DATASOURCE_REGID>  (22) 
+UALIB-291
+
+>  <PUBCHEM_EXT_DATASOURCE_SMILES>  (22) 
+CC1(CO1)C2=CC=CC=C2
+
+>  <PUBCHEM_SUBSTANCE_SYNONYM>  (22) 
+2-Methyl-2-phenyl-oxirane
+
+>  <PUBCHEM_SUBSTANCE_COMMENT>  (22) 
+Battle, W. The Synthesis of 5-(Boronic Ester)-Isoxazoles and Their use in Palladium-Catalyzed Cross-Coupling Reactions with Iodobenzene. M.A. Thesis, The University of Alabama, 1995.
+
+>  <PUBCHEM_EXT_SUBSTANCE_URL>  (22) 
+https://search.ebscohost.com/login.aspx?direct=true&db=cat00456a&AN=ua.849024&site=eds-live&scope=site&custid=s4594951&groupid=main&profid=eds&authtype=ip,guest
+
+>  <PUBCHEM_EXT_DATASOURCE_INCHI>  (22) 
+InChI=1S/C9H10O/c1-9(7-10-9)8-5-3-2-4-6-8/h2-6H,7H2,1H3
+
+$$$$
+
+     RDKit          2D
+
+  9 10  0  0  0  0  0  0  0  0999 V2000
+    0.7500   -1.2990    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.5000   -2.5981    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.7990   -3.3481    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.5000   -4.0981    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+    1.5000    0.0000    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.7500    1.2990    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.7500    1.2990    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.5000    0.0000    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.7500   -1.2990    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+  1  2  1  0
+  2  3  1  0
+  3  4  1  0
+  1  5  2  0
+  5  6  1  0
+  6  7  2  0
+  7  8  1  0
+  8  9  2  0
+  9  1  1  0
+  4  2  1  0
+M  END
+>  <PUBCHEM_EXT_DATASOURCE_REGID>  (23) 
+UALIB-292
+
+>  <PUBCHEM_EXT_DATASOURCE_SMILES>  (23) 
+C1(C2CO2)=CC=CC=C1
+
+>  <PUBCHEM_SUBSTANCE_SYNONYM>  (23) 
+2-Phenyl-oxirane
+
+>  <PUBCHEM_SUBSTANCE_COMMENT>  (23) 
+Battle, W. The Synthesis of 5-(Boronic Ester)-Isoxazoles and Their use in Palladium-Catalyzed Cross-Coupling Reactions with Iodobenzene. M.A. Thesis, The University of Alabama, 1995.
+
+>  <PUBCHEM_EXT_SUBSTANCE_URL>  (23) 
+https://search.ebscohost.com/login.aspx?direct=true&db=cat00456a&AN=ua.849024&site=eds-live&scope=site&custid=s4594951&groupid=main&profid=eds&authtype=ip,guest
+
+>  <PUBCHEM_EXT_DATASOURCE_INCHI>  (23) 
+InChI=1S/C8H8O/c1-2-4-7(5-3-1)8-6-9-8/h1-5,8H,6H2
+
+$$$$
+
+     RDKit          2D
+
+ 11 12  0  0  0  0  0  0  0  0999 V2000
+    3.7500   -1.2990    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    3.0000   -2.5981    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.5000   -2.5981    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.7500   -1.2990    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.5000    0.0000    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.7500    1.2990    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.7500    1.2990    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.5000    0.0000    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.7500   -1.2990    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    3.7500    0.2010    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    5.0490   -0.5490    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+  1  2  1  0
+  2  3  2  0
+  3  4  1  0
+  4  5  2  0
+  5  6  1  0
+  6  7  2  0
+  7  8  1  0
+  8  9  2  0
+  1 10  1  0
+ 10 11  1  0
+ 11  1  1  0
+  9  4  1  0
+M  END
+>  <PUBCHEM_EXT_DATASOURCE_REGID>  (24) 
+UALIB-293
+
+>  <PUBCHEM_EXT_DATASOURCE_SMILES>  (24) 
+C1(/C=C\C2=CC=CC=C2)CO1
+
+>  <PUBCHEM_SUBSTANCE_SYNONYM>  (24) 
+2-Phenylethylene-oxirane
+
+>  <PUBCHEM_SUBSTANCE_COMMENT>  (24) 
+Battle, W. The Synthesis of 5-(Boronic Ester)-Isoxazoles and Their use in Palladium-Catalyzed Cross-Coupling Reactions with Iodobenzene. M.A. Thesis, The University of Alabama, 1995.
+
+>  <PUBCHEM_EXT_SUBSTANCE_URL>  (24) 
+https://search.ebscohost.com/login.aspx?direct=true&db=cat00456a&AN=ua.849024&site=eds-live&scope=site&custid=s4594951&groupid=main&profid=eds&authtype=ip,guest
+
+>  <PUBCHEM_EXT_DATASOURCE_INCHI>  (24) 
+InChI=1S/C10H10O/c1-2-4-9(5-3-1)6-7-10-8-11-10/h1-7,10H,8H2/b7-6-
+
+$$$$
