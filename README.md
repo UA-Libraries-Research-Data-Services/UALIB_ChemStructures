@@ -40,15 +40,16 @@ with the additional thesis reference.
 
 ## What is your workflow? 
 
-We're still working on creating an optimal workflow that is highly transparent,
-open, and reproducible. Here is an overview of our current strategy:
+We're still working on creating an optimal open workflow that is highly reproducible. Here is an overview of our current strategy:
 
-1. Draw chemical structures in [PubChem Sketcher V2.4](https://pubchem.ncbi.nlm.nih.gov/edit3/index.html)
-2. Export SMILES (these are the CACTVS Kekule variant)
+1. Draw chemical structures in [ChemAxon MarvinSketch](https://chemaxon.com/products/marvin). We really like the free [PubChem Sketcher](https://pubchem.ncbi.nlm.nih.gov/edit3/index.html) too, however, we found it much faster to use MarvinSketch.
+2. Export as Daylight Kekule SMILES
 3. Create a tab delimited file with an index number for each compound (i.e., UALIB-###), 
 the name, citation, and permalink to the thesis. 
 4. Import the tabbed text file into an RDKit Pandas dataframe to calculate the 
 InChIs, and InChIKeys, and generate the SDfile.
+5. Calculate InChIKeys with ChemAxon molconvert and compare to the
+RDKit InchIKeys (this helps catch any issues with SMILES parsing across the toolkits).
 5. Update the UALIB_Chemical_Structures_REGID files and submit the SDfile to PubChem.
 6. Create a record on our [Institutional Repository](https://ir.ua.edu/) with the SDfile 
 and InChIkeys associated with the thesis.
@@ -62,9 +63,11 @@ and InChIkeys associated with the thesis.
  * UALIB_Chemical_Structures_REGID.csv (tab delimited)
  * UALIB_Chemical_Structures_REGID.sdf (SDfile)
 
-2. /StructureData/raw - files in here are the the original indexing files which
-include PubChem Sketcher V2.4 CACTVS Kekule SMILES, our internal REGID, substance name,
-thesis citation, and permalink.
+2. /StructureData/raw/CA_Marvin - files in here are the the original ChemAxon 
+MarvinSketch v19.27 .mrv chemical structure files.
+
+2. /StructureData/raw/CSV - files in here are the the original indexing files which
+include ChemAxon MarvinSketch v19.27 Daylight Kekule SMILES, our internal REGID, substance name, thesis citation, and permalink.
 
 3. /StructureData/rdkit_processed_csv - same as number 2, only adding RDKit
 calculated InChI and InChIKeys for the substances. The RDKit version used is labeled
@@ -88,6 +91,8 @@ a National Compound Collection: The Royal Society of Chemistry Pilot. Chem. Sci.
 ## Acknowledgments
 
 Special thanks to the following current and past contributors... list them here.
+
+We are also grateful to ChemAxon for providing the MarvinSketch Academic Research Licesne. 
 
 ## Notes on Copyright and Reuse
 
@@ -132,6 +137,4 @@ reusing a large corpus of the structures as a dataset, then it is appreciated
 if you cite our work as we put the effort into the indexing, reproduction of 
 the structures, and compilation. Lastly, any code in this repository is 
 licensed under the BSD-2 license.
-
-
 

@@ -1,0 +1,3 @@
+# ChemAxon Molconvert 19.27.0 shell command for InChIKey calculation
+
+$ molconvert -g "inchikey:AuxNone" input_file.smi -o output_file.inchikey

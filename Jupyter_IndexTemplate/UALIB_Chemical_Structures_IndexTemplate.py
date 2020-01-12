@@ -5,7 +5,7 @@
 # 
 # ### Vincent F. Scalfani
 
-# In[2]:
+# In[53]:
 
 
 from rdkit.Chem import AllChem as Chem
@@ -23,7 +23,7 @@ import rdkit
 rdkit.__version__
 
 
-# In[19]:
+# In[54]:
 
 
 # Many thanks to Chris Swain's tutorial linked below, which helped me adapt the 
@@ -31,46 +31,48 @@ rdkit.__version__
 # https://www.macinchem.org/reviews/molsimilar/SimilarMyMolecules.html
 
 
-# In[20]:
+# In[55]:
 
 
 # Import the thesis chemical structure data
 
 # The file names are in the format:
-# year_author_UACatalogAccession#_substances_raw.csv (e.g.,1995_Battle_W_UA.849024_substances_raw.csv)
+# year_author_UACatalogAccession#_substances_raw.csv (e.g.,2000_Eom_KD_UA.1128100_substances_raw.csv)
 
 # The format of the data within the file is as follows:
-# PUBCHEM_EXT_DATASOURCE_SMILES	PUBCHEM_EXT_DATASOURCE_REGID	PUBCHEM_SUBSTANCE_SYNONYM	PUBCHEM_SUBSTANCE_COMMENT	PUBCHEM_EXT_SUBSTANCE_URL
-# [H]C#CB1OC(C)(C)C(C)(C)O1	UALIB-270	Pinacol ethynylborate	Battle, W. The Synthesis of 5-(Boronic Ester)-Isoxazoles and Their use in Palladium-Catalyzed Cross-Coupling Reactions with Iodobenzene. M.A. Thesis, The University of Alabama, 1995.	https://search.ebscohost.com/login.aspx?direct=true&db=cat00456a&AN=ua.849024&site=eds-live&scope=site&custid=s4594951&groupid=main&profid=eds&authtype=ip,guest
-# CC1(C)C(C)(C)OB(C2=CC(C3=CC=C(OC)C=C3)=NO2)O1	UALIB-271	3-(4’Methoxyphenyl)-5-(pinacolboronate)-isoxazole	Battle, W. The Synthesis of 5-(Boronic Ester)-Isoxazoles and Their use in Palladium-Catalyzed Cross-Coupling Reactions with Iodobenzene. M.A. Thesis, The University of Alabama, 1995.	https://search.ebscohost.com/login.aspx?direct=true&db=cat00456a&AN=ua.849024&site=eds-live&scope=site&custid=s4594951&groupid=main&profid=eds&authtype=ip,guest
-# CC1(C)C(C)(C)OB(C2=CC(C3=CC=C(Br)C=C3)=NO2)O1	UALIB-272	3-(4’-Bromophenyl)-5-(pinacolboronate)-isoxazole	Battle, W. The Synthesis of 5-(Boronic Ester)-Isoxazoles and Their use in Palladium-Catalyzed Cross-Coupling Reactions with Iodobenzene. M.A. Thesis, The University of Alabama, 1995.	https://search.ebscohost.com/login.aspx?direct=true&db=cat00456a&AN=ua.849024&site=eds-live&scope=site&custid=s4594951&groupid=main&profid=eds&authtype=ip,guest
+
+# CHEMAXON_DAYLIGHT_SMILES_19.27.0	PUBCHEM_EXT_DATASOURCE_REGID	PUBCHEM_SUBSTANCE_SYNONYM	PUBCHEM_SUBSTANCE_COMMENT	PUBCHEM_EXT_SUBSTANCE_URL	CHEMAXON_19.27.0_IK
+# [H][C@@](Br)(CC)C(C)(C)C(O)=O	UALIB-339	Erythro-2,3-Dibromo-2-methylpentanoic acid	Eom, K.D. Total Synthesis of (+)-Asteltoxin. Ph.D. Thesis, The University of Alabama, 2000.	https://search.ebscohost.com/login.aspx?direct=true&db=cat00456a&AN=ua.1128100&site=eds-live&scope=site&custid=s4594951&groupid=main&profid=eds&authtype=ip,guest	UCKHUOHUOYJTCV-RXMQYKEDSA-N
+# [H]\C(CC)=C(/C)Br	UALIB-340	Z-2-Bromo-2-pentene	Eom, K.D. Total Synthesis of (+)-Asteltoxin. Ph.D. Thesis, The University of Alabama, 2000.	https://search.ebscohost.com/login.aspx?direct=true&db=cat00456a&AN=ua.1128100&site=eds-live&scope=site&custid=s4594951&groupid=main&profid=eds&authtype=ip,guest	RWKAFOQZRPDXDT-PLNGDYQASA-N
+# [H]\C(CC)=C(/C)C(O)=O	UALIB-341	cis-2-Methyl-2-pentenoic acid	Eom, K.D. Total Synthesis of (+)-Asteltoxin. Ph.D. Thesis, The University of Alabama, 2000.	https://search.ebscohost.com/login.aspx?direct=true&db=cat00456a&AN=ua.1128100&site=eds-live&scope=site&custid=s4594951&groupid=main&profid=eds&authtype=ip,guest	JJYWRQLLQAKNAD-PLNGDYQASA-N
 # ...
 
-file_name_raw = 'test_substances_raw.csv' # change this line each time, that's it. 
+file_name_raw = '2000_Eom_KD_UA.1128100_substances_raw.csv' # change this line each time, that's it. 
 thesis_df = pd.read_csv(file_name_raw, sep = '\t')
 
 # view first 10 rows
 thesis_df.head(10)
 
 
-# In[21]:
+# In[56]:
 
 
 # Add RDKit Molecular Objects
-PandasTools.AddMoleculeColumnToFrame(thesis_df,'PUBCHEM_EXT_DATASOURCE_SMILES','Structure', includeFingerprints=False)
+PandasTools.AddMoleculeColumnToFrame(thesis_df,'CHEMAXON_DAYLIGHT_SMILES_19.27.0','RDMol', includeFingerprints=False)
 print([str(x) for x in  thesis_df.columns])
 
 
-# In[22]:
+# In[57]:
 
 
 # rearrange table order
-thesis_df = thesis_df[['Structure',
+thesis_df = thesis_df[['RDMol',
  'PUBCHEM_EXT_DATASOURCE_REGID',
- 'PUBCHEM_EXT_DATASOURCE_SMILES',
+ 'CHEMAXON_DAYLIGHT_SMILES_19.27.0',
  'PUBCHEM_SUBSTANCE_SYNONYM',
  'PUBCHEM_SUBSTANCE_COMMENT',
- 'PUBCHEM_EXT_SUBSTANCE_URL']]
+ 'PUBCHEM_EXT_SUBSTANCE_URL',
+ 'CHEMAXON_19.27.0_IK']]
 
 # Display table
 # thesis_df
@@ -78,19 +80,19 @@ thesis_df = thesis_df[['Structure',
 from IPython.display import HTML;HTML(thesis_df.head(len(thesis_df.index)).to_html()) 
 
 
-# In[23]:
+# In[58]:
 
 
 # we can also display just the molecules like this:
-PandasTools.FrameToGridImage(thesis_df,column= 'Structure', molsPerRow=4,subImgSize=(300,300),legendsCol="PUBCHEM_EXT_DATASOURCE_REGID")
+PandasTools.FrameToGridImage(thesis_df,column= 'RDMol', molsPerRow=4,subImgSize=(300,300),legendsCol="PUBCHEM_EXT_DATASOURCE_REGID")
 
 
-# In[24]:
+# In[59]:
 
 
-# Now we need to caluclate the InChI and add to thesis_df
+# Now we need to caluclate the InChIs from RDKit and add to thesis_df
 inchi_list = []
-for mol in thesis_df['Structure']:
+for mol in thesis_df['RDMol']:
     inchi = Chem.MolToInchi(mol)
     inchi_list.append(inchi)
 
@@ -98,20 +100,35 @@ for mol in thesis_df['Structure']:
 thesis_df['PUBCHEM_EXT_DATASOURCE_INCHI']=inchi_list
 
 
-# In[25]:
+# In[60]:
 
 
-# Repeat for InChIKey 
+# Repeat for RDKit InChIKey 
 ik_list = []
-for mol in thesis_df['Structure']:
+for mol in thesis_df['RDMol']:
     ik = Chem.MolToInchiKey(mol)
     ik_list.append(ik)
 
 # add to dataframe
-thesis_df['INCHIKEY']=ik_list
+thesis_df['RDKIT_INCHIKEY']=ik_list
 
 
-# In[26]:
+# In[61]:
+
+
+# Repeat for RDKit SMILES, write kekulized SMILES
+
+smiles_list = []
+for mol in thesis_df['RDMol']:
+    Chem.Kekulize(mol)
+    smiles = Chem.MolToSmiles(mol,kekuleSmiles=True)
+    smiles_list.append(smiles)
+
+# add to dataframe
+thesis_df['PUBCHEM_EXT_DATASOURCE_SMILES']=smiles_list
+
+
+# In[62]:
 
 
 # Export the SDF for PubChem upload
@@ -119,16 +136,16 @@ thesis_df['INCHIKEY']=ik_list
 # create the file name
 file_name_sdf = file_name_raw.replace('raw.csv','rdkit2019092.sdf')
 
-PandasTools.WriteSDF(thesis_df,file_name_sdf, molColName='Structure', 
+PandasTools.WriteSDF(thesis_df,file_name_sdf, molColName='RDMol', 
     properties=['PUBCHEM_EXT_DATASOURCE_REGID',
                 'PUBCHEM_EXT_DATASOURCE_SMILES',
+                'PUBCHEM_EXT_DATASOURCE_INCHI',
                 'PUBCHEM_SUBSTANCE_SYNONYM',
                 'PUBCHEM_SUBSTANCE_COMMENT',
-                'PUBCHEM_EXT_SUBSTANCE_URL',
-                'PUBCHEM_EXT_DATASOURCE_INCHI',])
+                'PUBCHEM_EXT_SUBSTANCE_URL'])
 
 
-# In[27]:
+# In[63]:
 
 
 # Export to csv (tab seperated) without RDKit mol object image
@@ -142,7 +159,9 @@ sel_cols = ['PUBCHEM_EXT_DATASOURCE_REGID',
                 'PUBCHEM_SUBSTANCE_COMMENT',
                 'PUBCHEM_EXT_SUBSTANCE_URL',
                 'PUBCHEM_EXT_DATASOURCE_INCHI',
-                'INCHIKEY']
+                'RDKIT_INCHIKEY',
+                'CHEMAXON_19.27.0_IK',
+                'CHEMAXON_DAYLIGHT_SMILES_19.27.0']
 
 thesis_df.to_csv(file_name_csv, sep ='\t', index=False, columns = sel_cols)
 
@@ -153,7 +172,7 @@ thesis_df.to_csv(file_name_csv, sep ='\t', index=False, columns = sel_cols)
 
 
 
-# In[8]:
+# In[65]:
 
 
 # Create the SDfile for all indexed structures (run this after updating
@@ -165,13 +184,16 @@ All_df = pd.read_csv('UALIB_Chemical_Structures_REGID.csv', sep = '\t')
 All_df.head(10)
 
 
-# In[10]:
+# In[66]:
 
 
 # Add RDKit Molecular Objects
 PandasTools.AddMoleculeColumnToFrame(All_df,'PUBCHEM_EXT_DATASOURCE_SMILES','Structure', includeFingerprints=False)
 
 # export the sdf
+
+#TODO vhange date to ISO and fix SID .0 issue.
+
 PandasTools.WriteSDF(All_df,'UALIB_Chemical_Structures_REGID.sdf', molColName='Structure', 
     properties=list(All_df.columns))
 
