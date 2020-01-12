@@ -37,7 +37,6 @@ Chemical Identifier Resolver.
 for duplicates via the InChIKey, then update the original PubChem Substance record 
 with the additional thesis reference.
 
-
 ## What is your workflow? 
 
 We're still working on creating an optimal open workflow that is highly reproducible. Here is an overview of our current strategy:
@@ -47,11 +46,11 @@ We're still working on creating an optimal open workflow that is highly reproduc
 3. Create a tab delimited file with an index number for each compound (i.e., UALIB-###), 
 the name, citation, and permalink to the thesis. 
 4. Import the tabbed text file into an RDKit Pandas dataframe to calculate the 
-InChIs, and InChIKeys, write kekulized SMILES, and generate the SDfile (InChIs v1.05 as computed by RDKit 2019.09.2 release).
-5. Compare RDKit and ChemAxon InChIKeys (this helps catch any issues with SMILES parsing across the toolkits). If the InChIKeys do not match, we'll need to figure out the issue before adding the structure to the index.
-6. Update the UALIB_Chemical_Structures_REGID files and submit the SDfile to PubChem.
-7. Create a record on our [Institutional Repository](https://ir.ua.edu/) with the SDfile.
-
+InChIs, InChIKeys, write kekulized SMILES, and generate the SDfile (InChIs v1.05 as computed by RDKit 2019.09.2 release).
+5. Compare RDKit and ChemAxon InChIKeys (this helps catch any issues with SMILES parsing across the toolkits). If the InChIKeys do not match, we figure out the issue before adding the structure to the index.
+6. Submit the SDfile to PubChem.
+7. Update the UALIB_Chemical_Structures_REGID files
+8. Create a record on our [Institutional Repository](https://ir.ua.edu/) with the SDfile.
 
 ## File Overview Notes
 
@@ -61,15 +60,15 @@ InChIs, and InChIKeys, write kekulized SMILES, and generate the SDfile (InChIs v
  * UALIB_Chemical_Structures_REGID.csv (tab delimited)
  * UALIB_Chemical_Structures_REGID.sdf (SDfile)
 
-2. /StructureData/raw/CA_Marvin_19.27.0 - files in here are the the original ChemAxon 
+2. **/StructureData/raw/CA_Marvin_19.27.0** - files in here are the the original ChemAxon 
 MarvinSketch v19.27 .mrv, .smi, and .inchikey chemical structure files.
 
-2. /StructureData/raw/CSV - files in here are the the original indexing files which
+2. **/StructureData/raw/CSV** - files in here are the the original indexing files which
 include ChemAxon MarvinSketch v19.27 Daylight SMILES, InChIKeys (v1.05 as computed by ChemAxon molconvert v19.27.0), our internal REGID, substance name, thesis citation, and permalink.
 
-3. /StructureData/rdkit_processed_csv - same as number 2, only adding RDKit kekulized SMILES (RDKit 2019.09.2 release), calculated InChI and InChIKeys for the substances(InChIs v1.05 as computed by RDKit 2019.09.2 release). The RDKit version used is also labeled in the filename. Note that the PUBCHEM_EXT_DATASOURCE InChI and SMILES are from RDKit. 
+3. **/StructureData/rdkit_processed_csv** - same as number 2, only adding RDKit kekulized SMILES (RDKit 2019.09.2 release), calculated InChI and InChIKeys for the substances(InChIs v1.05 as computed by RDKit 2019.09.2 release). The RDKit version used is also labeled in the filename. Note that the PUBCHEM_EXT_DATASOURCE InChI and SMILES are from RDKit. 
 
-4. /StructureData/rdkit_processed_sdf - SDfile containing RDKit connection table, and 
+4. **/StructureData/rdkit_processed_sdf** - SDfile containing RDKit connection table, and 
 the following SDfile data: SMILES (RDKit 2019.09.2 release), InChI (v1.05 as computed by RDKit 2019.09.2 release), our internal REGID, substance name,
 thesis citation, and permalink. The RDKit version used is also labeled
 in the filename. These files are submitted to PubChem.
@@ -85,9 +84,10 @@ a National Compound Collection: The Royal Society of Chemistry Pilot. Chem. Sci.
 
 ## Acknowledgments
 
-Special thanks to the following current and past contributors... list them here.
+Special thanks to the following current and past contributors... list them here [will update
+tomorrow]
 
-We are also grateful to ChemAxon for providing the MarvinSketch Academic Research Licesne. 
+We are also grateful to ChemAxon for providing the MarvinSketch Academic Research License (thanks!). 
 
 ## Notes on Copyright and Reuse
 
@@ -95,12 +95,12 @@ Disclaimer: Not legal advice, just our own personal (non-lawyer) thoughtful
 interpretation.
 
 The purpose of The University of Alabama Dissertation and Thesis indexing project 
-is to allow greater discovery and credit of the original authors' theses, 
+is to allow greater discovery, use, and credit of the original authors' theses, 
 not to claim any ownership of the written thesis content. The thesis authors hold the 
 copyright to their own thesis.
 
-We have only extracted scientific facts (i.e., the chemical structures and bibliographic
-information) from the theses. Such facts and bibliographic data are not subject 
+We have only extracted and shared scientific facts (i.e., the chemical structures) and bibliographic
+information from the theses. Such scientific facts and bibliographic data are not subject 
 to U.S. copyright protection: 
 [Compendium of U.S. Copyright Office Practices](https://www.copyright.gov/comp3/).
 See specifically section 313.3(A), where examples are listed that are excluded 
@@ -111,15 +111,15 @@ compounds, regardless of whether they are man-made or produced by nature..."
 
 In an effort to fully comply with copyright, Fair Use, and standard scholarly 
 practice of reusing a thesis, we did not use any automated chemical structure 
-extraction software. Instead, we produced our own chemical structures by using 
-the theses as a reference and encoding the structures manually ourselves.
+extraction software. Instead, we drew our own chemical structures by using 
+the theses as a reference and encoding the structures ourselves.
 
 With that said, we are grateful to the thesis authors for their contributions
 to science and have endeavored to credit their work respectfully and wherever 
 possible by including a citation reference and permalink. The citation references and
 permalinks are included on all shared chemical structure data including within
 this Git Repository data files, The University of Alabama Institutional Repository,
-and PubChem (Substance Pages).
+and PubChem Substance Pages.
 
 Our intention is for you to reuse the chemical structures 
 however you like. All chemical structure data in this repository is licensed 
@@ -129,7 +129,5 @@ standard scholarly practice for reuse of the scientific literature,
 particularly if the chemical structure has led you to useful content within their 
 thesis (as noted above, each thesis Author holds their own copyright). If you are
 reusing a large corpus of the structures as a dataset, then it is appreciated 
-if you cite our work as we put the effort into the indexing, reproduction of 
-the structures, and compilation. Lastly, any code in this repository is 
-licensed under the BSD-2 license.
+if you cite our work as we put the effort into the indexing and data compilation. Lastly, any code in this repository is licensed under the BSD-2 license.
 
