@@ -8,7 +8,7 @@ data includes the name, SMILES, and InChI of all synthesized chemical
 structures within the thesis along with a permalink to the thesis full-text or 
 catalog link (if not yet available online), Moreover, an SDfile containing the connection table, name, 
 SMILES, InChI, citation, permalink, and local structure registry ID is included. 
-The SDfile is what we submit directly to PubChem. PubChem is likely where you want to download our 
+The RDKit processed SDfile is what we submit directly to PubChem. PubChem is likely where you want to download our 
 data from as PubChem handles the standardization of the chemical structures:
 [The University of Alabama Libraries PubChem Data Source](https://pubchem.ncbi.nlm.nih.gov/source/15645).
 However, this GitHub repository is useful for those seeking to download our non-standardized data
@@ -29,13 +29,13 @@ No judgment is made on the the accuracy of the reported syntheses.
 If the authors claimed they synthesized the substance in an experimental section and
 includes characterization data, we indexed it. 
 
-* The substance name given in the dissertation is preferred and used, not a systematic name. 
+* The substance name given in the dissertation is preferred and used. 
 If no name is given, we generated an IUPAC name, where possible, using the NCI/CADD
 Chemical Identifier Resolver.
 
 * Duplicates are assigned the same local Registry ID (i.e., UALIB-###). We check 
 for duplicates via the InChIKey, then update the original PubChem Substance record 
-with the additional thesis reference. 
+with the additional thesis reference.
 
 
 ## What is your workflow? 
@@ -43,16 +43,14 @@ with the additional thesis reference.
 We're still working on creating an optimal open workflow that is highly reproducible. Here is an overview of our current strategy:
 
 1. Draw chemical structures in [ChemAxon MarvinSketch](https://chemaxon.com/products/marvin). We really like the free [PubChem Sketcher](https://pubchem.ncbi.nlm.nih.gov/edit3/index.html) too, however, we found it much faster to use MarvinSketch.
-2. Export as Daylight Kekule SMILES
+2. Export as Daylight ChemAxon SMILES (v19.27.0) and calculate InChIKeys (v1.05 as computed by ChemAxon molconvert v19.27.0)
 3. Create a tab delimited file with an index number for each compound (i.e., UALIB-###), 
 the name, citation, and permalink to the thesis. 
 4. Import the tabbed text file into an RDKit Pandas dataframe to calculate the 
-InChIs, and InChIKeys, and generate the SDfile.
-5. Calculate InChIKeys with ChemAxon molconvert and compare to the
-RDKit InchIKeys (this helps catch any issues with SMILES parsing across the toolkits).
-5. Update the UALIB_Chemical_Structures_REGID files and submit the SDfile to PubChem.
-6. Create a record on our [Institutional Repository](https://ir.ua.edu/) with the SDfile 
-and InChIkeys associated with the thesis.
+InChIs, and InChIKeys, write kekulized SMILES, and generate the SDfile (InChIs v1.05 as computed by RDKit 2019.09.2 release).
+5. Compare RDKit and ChemAxon InChIKeys (this helps catch any issues with SMILES parsing across the toolkits). If the InChIKeys do not match, we'll need to figure out the issue before adding the structure to the index.
+6. Update the UALIB_Chemical_Structures_REGID files and submit the SDfile to PubChem.
+7. Create a record on our [Institutional Repository](https://ir.ua.edu/) with the SDfile.
 
 
 ## File Overview Notes
@@ -63,21 +61,18 @@ and InChIkeys associated with the thesis.
  * UALIB_Chemical_Structures_REGID.csv (tab delimited)
  * UALIB_Chemical_Structures_REGID.sdf (SDfile)
 
-2. /StructureData/raw/CA_Marvin - files in here are the the original ChemAxon 
-MarvinSketch v19.27 .mrv chemical structure files.
+2. /StructureData/raw/CA_Marvin_19.27.0 - files in here are the the original ChemAxon 
+MarvinSketch v19.27 .mrv, .smi, and .inchikey chemical structure files.
 
 2. /StructureData/raw/CSV - files in here are the the original indexing files which
-include ChemAxon MarvinSketch v19.27 Daylight Kekule SMILES, our internal REGID, substance name, thesis citation, and permalink.
+include ChemAxon MarvinSketch v19.27 Daylight SMILES, InChIKeys (v1.05 as computed by ChemAxon molconvert v19.27.0), our internal REGID, substance name, thesis citation, and permalink.
 
-3. /StructureData/rdkit_processed_csv - same as number 2, only adding RDKit
-calculated InChI and InChIKeys for the substances. The RDKit version used is labeled
-in the filename. 
+3. /StructureData/rdkit_processed_csv - same as number 2, only adding RDKit kekulized SMILES (RDKit 2019.09.2 release), calculated InChI and InChIKeys for the substances(InChIs v1.05 as computed by RDKit 2019.09.2 release). The RDKit version used is also labeled in the filename. Note that the PUBCHEM_EXT_DATASOURCE InChI and SMILES are from RDKit. 
 
 4. /StructureData/rdkit_processed_sdf - SDfile containing RDKit connection table, and 
-the following SDfile data: SMILES, InChI, our internal REGID, substance name,
-thesis citation, and permalink. The RDKit version used is labeled
-in the filename. **Note that the SMILES are not RDKit generated and are
-the original PubChem Sketcher V2.4 CACTVS Kekule SMILES.** 
+the following SDfile data: SMILES (RDKit 2019.09.2 release), InChI (v1.05 as computed by RDKit 2019.09.2 release), our internal REGID, substance name,
+thesis citation, and permalink. The RDKit version used is also labeled
+in the filename. These files are submitted to PubChem.
 
 ## References
 
