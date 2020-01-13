@@ -5,7 +5,7 @@ Chemical Substances from The University of Alabama Dissertations and Theses
 This repository contains the original indexed chemical substances (non-standardized) 
 from The University of Alabama Dissertations and Theses (hereafter, theses). 
 
-**At the moment, there are about 350 structures, however, we are hoping to get to > 5000 structures in 6 months, so check back!.**
+**At the moment, there are about 350 structures, however, we are hoping to get to > 5000 structures in 6 months, so check back!**
 
 Chemical structure data includes the name, SMILES, and InChI of all synthesized chemical
 structures within the thesis along with a permalink to the thesis full-text or 
@@ -28,7 +28,7 @@ limited organometallic chemical substances.
 
 * Chemical substances indexed must have synthetic experimental characterization
 details such as NMR, mass spec, elemental analysis, and melting point. 
-No judgment is made on the the accuracy of the reported syntheses. 
+No judgment is made on the accuracy of the reported syntheses. 
 If the authors claimed they synthesized the substance in an experimental section and
 includes characterization data, we indexed it. 
 
@@ -63,18 +63,16 @@ InChIs, InChIKeys, write kekulized SMILES, and generate the SDfile (InChIs v1.05
  * UALIB_Chemical_Structures_REGID.csv (tab delimited)
  * UALIB_Chemical_Structures_REGID.sdf (SDfile)
 
-2. **/StructureData/raw/CA_Marvin_19.27.0** - files in here are the the original ChemAxon 
+2. **/StructureData/raw/CA_Marvin_19.27.0** - files in here are the original ChemAxon 
 MarvinSketch v19.27 .mrv, .smi, and .inchikey chemical structure files.
 
-2. **/StructureData/raw/CSV** - files in here are the the original indexing files which
+2. **/StructureData/raw/CSV** - files in here are the original indexing files which
 include ChemAxon MarvinSketch v19.27 Daylight SMILES, InChIKeys (v1.05 as computed by ChemAxon molconvert v19.27.0), our internal REGID, substance name, thesis citation, and permalink.
 
-3. **/StructureData/rdkit_processed_csv** - same as number 2, only adding RDKit kekulized SMILES (RDKit 2019.09.2 release), calculated InChI and InChIKeys for the substances(InChIs v1.05 as computed by RDKit 2019.09.2 release). The RDKit version used is also labeled in the filename. Note that the PUBCHEM_EXT_DATASOURCE InChI and SMILES are from RDKit. 
+3. **/StructureData/rdkit_processed_csv** - same as number 2, only adding RDKit kekulized SMILES (RDKit 2019.09.2 release), calculated InChI and InChIKeys for the substances(InChIs v1.05 as computed by RDKit 2019.09.2 release). 
 
 4. **/StructureData/rdkit_processed_sdf** - SDfile containing RDKit connection table, and 
-the following SDfile data: SMILES (RDKit 2019.09.2 release), InChI (v1.05 as computed by RDKit 2019.09.2 release), our internal REGID, substance name,
-thesis citation, and permalink. The RDKit version used is also labeled
-in the filename. These files are submitted to PubChem.
+the following SDfile data: SMILES (RDKit 2019.09.2 release), InChI (v1.05 as computed by RDKit 2019.09.2 release), our internal REGID, substance name, thesis citation, and permalink. These files are submitted to PubChem.
 
 ## References
 

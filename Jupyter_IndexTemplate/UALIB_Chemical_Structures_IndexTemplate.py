@@ -41,7 +41,7 @@ rdkit.__version__
 
 # The format of the data within the file is as follows:
 
-# CHEMAXON_DAYLIGHT_SMILES_19.27.0	PUBCHEM_EXT_DATASOURCE_REGID	PUBCHEM_SUBSTANCE_SYNONYM	PUBCHEM_SUBSTANCE_COMMENT	PUBCHEM_EXT_SUBSTANCE_URL	INCHIKEY_1.05_CHEMAXON_19.27.0
+# SMILES_CHEMAXON_19.27.0	DATASOURCE_REGID	SUBSTANCE_SYNONYM	SUBSTANCE_COMMENT	SUBSTANCE_URL	INCHIKEY_1.05_CHEMAXON_19.27.0
 # [H][C@@](Br)(CC)C(C)(C)C(O)=O	UALIB-339	Erythro-2,3-Dibromo-2-methylpentanoic acid	Eom, K.D. Total Synthesis of (+)-Asteltoxin. Ph.D. Thesis, The University of Alabama, 2000.	https://search.ebscohost.com/login.aspx?direct=true&db=cat00456a&AN=ua.1128100&site=eds-live&scope=site&custid=s4594951&groupid=main&profid=eds&authtype=ip,guest	UCKHUOHUOYJTCV-RXMQYKEDSA-N
 # [H]\C(CC)=C(/C)Br	UALIB-340	Z-2-Bromo-2-pentene	Eom, K.D. Total Synthesis of (+)-Asteltoxin. Ph.D. Thesis, The University of Alabama, 2000.	https://search.ebscohost.com/login.aspx?direct=true&db=cat00456a&AN=ua.1128100&site=eds-live&scope=site&custid=s4594951&groupid=main&profid=eds&authtype=ip,guest	RWKAFOQZRPDXDT-PLNGDYQASA-N
 # [H]\C(CC)=C(/C)C(O)=O	UALIB-341	cis-2-Methyl-2-pentenoic acid	Eom, K.D. Total Synthesis of (+)-Asteltoxin. Ph.D. Thesis, The University of Alabama, 2000.	https://search.ebscohost.com/login.aspx?direct=true&db=cat00456a&AN=ua.1128100&site=eds-live&scope=site&custid=s4594951&groupid=main&profid=eds&authtype=ip,guest	JJYWRQLLQAKNAD-PLNGDYQASA-N
@@ -58,7 +58,7 @@ thesis_df.head(10)
 
 
 # Add RDKit Molecular Objects
-PandasTools.AddMoleculeColumnToFrame(thesis_df,'CHEMAXON_DAYLIGHT_SMILES_19.27.0','RDMol', includeFingerprints=False)
+PandasTools.AddMoleculeColumnToFrame(thesis_df,'SMILES_CHEMAXON_19.27.0','RDMol', includeFingerprints=False)
 print([str(x) for x in  thesis_df.columns])
 
 
@@ -67,11 +67,11 @@ print([str(x) for x in  thesis_df.columns])
 
 # rearrange table order
 thesis_df = thesis_df[['RDMol',
- 'PUBCHEM_EXT_DATASOURCE_REGID',
- 'CHEMAXON_DAYLIGHT_SMILES_19.27.0',
- 'PUBCHEM_SUBSTANCE_SYNONYM',
- 'PUBCHEM_SUBSTANCE_COMMENT',
- 'PUBCHEM_EXT_SUBSTANCE_URL',
+ 'DATASOURCE_REGID',
+ 'SMILES_CHEMAXON_19.27.0',
+ 'SUBSTANCE_SYNONYM',
+ 'SUBSTANCE_COMMENT',
+ 'SUBSTANCE_URL',
  'INCHIKEY_1.05_CHEMAXON_19.27.0']]
 
 # Display table
@@ -84,10 +84,10 @@ from IPython.display import HTML;HTML(thesis_df.head(len(thesis_df.index)).to_ht
 
 
 # we can also display just the molecules like this:
-PandasTools.FrameToGridImage(thesis_df,column= 'RDMol', molsPerRow=4,subImgSize=(300,300),legendsCol="PUBCHEM_EXT_DATASOURCE_REGID")
+PandasTools.FrameToGridImage(thesis_df,column= 'RDMol', molsPerRow=4,subImgSize=(300,300),legendsCol="DATASOURCE_REGID")
 
 
-# In[9]:
+# In[8]:
 
 
 # Now we need to caluclate the InChIs from RDKit and add to thesis_df
@@ -99,10 +99,10 @@ for mol in thesis_df['RDMol']:
     inchi_list.append(inchi)
 
 # add to dataframe
-thesis_df['PUBCHEM_EXT_DATASOURCE_INCHI']=inchi_list
+thesis_df['INCHI_1.05_RDKIT_2019.09.2']=inchi_list
 
 
-# In[10]:
+# In[9]:
 
 
 # Repeat for RDKit InChIKey
@@ -113,10 +113,10 @@ for mol in thesis_df['RDMol']:
     ik_list.append(ik)
        
 # add to dataframe
-thesis_df['INCHIKEY_1.05_RDKit_2019.09.2']=ik_list
+thesis_df['INCHIKEY_1.05_RDKIT_2019.09.2']=ik_list
 
 
-# In[11]:
+# In[10]:
 
 
 # Repeat for RDKit SMILES, write kekulized SMILES
@@ -129,10 +129,10 @@ for mol in thesis_df['RDMol']:
     smiles_list.append(smiles)
 
 # add to dataframe
-thesis_df['PUBCHEM_EXT_DATASOURCE_SMILES']=smiles_list
+thesis_df['SMILES_RDKIT_2019.09.2']=smiles_list
 
 
-# In[12]:
+# In[11]:
 
 
 # Export the SDF for PubChem upload
@@ -141,15 +141,15 @@ thesis_df['PUBCHEM_EXT_DATASOURCE_SMILES']=smiles_list
 file_name_sdf = file_name_raw.replace('raw.csv','rdkit2019092.sdf')
 
 PandasTools.WriteSDF(thesis_df,file_name_sdf, molColName='RDMol', 
-    properties=['PUBCHEM_EXT_DATASOURCE_REGID',
-                'PUBCHEM_EXT_DATASOURCE_SMILES',
-                'PUBCHEM_EXT_DATASOURCE_INCHI',
-                'PUBCHEM_SUBSTANCE_SYNONYM',
-                'PUBCHEM_SUBSTANCE_COMMENT',
-                'PUBCHEM_EXT_SUBSTANCE_URL'])
+    properties=['DATASOURCE_REGID',
+                'SMILES_RDKIT_2019.09.2',
+                'INCHI_1.05_RDKIT_2019.09.2',
+                'SUBSTANCE_SYNONYM',
+                'SUBSTANCE_COMMENT',
+                'SUBSTANCE_URL'])
 
 
-# In[13]:
+# In[12]:
 
 
 # Export to csv (tab seperated) without RDKit mol object image
@@ -157,15 +157,15 @@ PandasTools.WriteSDF(thesis_df,file_name_sdf, molColName='RDMol',
 # create the file name
 file_name_csv = file_name_raw.replace('raw.csv','rdkit2019092.csv')
 
-sel_cols = ['PUBCHEM_EXT_DATASOURCE_REGID',
-                'PUBCHEM_EXT_DATASOURCE_SMILES',
-                'PUBCHEM_SUBSTANCE_SYNONYM',
-                'PUBCHEM_SUBSTANCE_COMMENT',
-                'PUBCHEM_EXT_SUBSTANCE_URL',
-                'PUBCHEM_EXT_DATASOURCE_INCHI',
-                'INCHIKEY_1.05_RDKit_2019.09.2',
+sel_cols = ['DATASOURCE_REGID',
+                'SMILES_RDKIT_2019.09.2',
+                'SUBSTANCE_SYNONYM',
+                'SUBSTANCE_COMMENT',
+                'SUBSTANCE_URL',
+                'INCHI_1.05_RDKIT_2019.09.2',
+                'INCHIKEY_1.05_RDKIT_2019.09.2',
                 'INCHIKEY_1.05_CHEMAXON_19.27.0',
-                'CHEMAXON_DAYLIGHT_SMILES_19.27.0']
+                'SMILES_CHEMAXON_19.27.0']
 
 thesis_df.to_csv(file_name_csv, sep ='\t', index=False, columns = sel_cols)
 
@@ -176,7 +176,7 @@ thesis_df.to_csv(file_name_csv, sep ='\t', index=False, columns = sel_cols)
 
 
 
-# In[15]:
+# In[13]:
 
 
 # Create the SDfile for all indexed structures (run this after updating
@@ -188,11 +188,11 @@ All_df = pd.read_csv('UALIB_Chemical_Structures_REGID.csv', sep = '\t')
 All_df.head(10)
 
 
-# In[17]:
+# In[15]:
 
 
 # Add RDKit Molecular Objects
-PandasTools.AddMoleculeColumnToFrame(All_df,'PUBCHEM_EXT_DATASOURCE_SMILES','Structure', includeFingerprints=False)
+PandasTools.AddMoleculeColumnToFrame(All_df,'SMILES_RDKIT_2019.09.2**','Structure', includeFingerprints=False)
 
 # export the sdf
 #TODO change date to ISO 
