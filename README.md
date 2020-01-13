@@ -5,7 +5,7 @@ Chemical Substances from The University of Alabama Dissertations and Theses
 This repository contains the original indexed chemical substances (non-standardized) 
 from The University of Alabama Dissertations and Theses (hereafter, theses). 
 
-**At the moment, there are about 350 structures, however, we are hoping to get to > 5000 structures in 6 months, so check back!**
+**At the moment, there are about 400 structures, however, we are hoping to get to > 5000 structures in 6 months, so check back!**
 
 Chemical structure data includes the name, SMILES, and InChI of all synthesized chemical
 structures within the thesis along with a permalink to the thesis full-text or 
@@ -32,9 +32,10 @@ No judgment is made on the accuracy of the reported syntheses.
 If the authors claimed they synthesized the substance in an experimental section and
 includes characterization data, we indexed it. 
 
-* The substance name given in the dissertation is preferred and used. 
-If no name is given, we generated an IUPAC name, where possible, using the NCI/CADD
-Chemical Identifier Resolver.
+* The substance name given in the dissertation is preferred and used. Sometimes
+this is a systematic name, other times it is simply "Compound 50" or "Diol 70a". 
+Since PubChem computes the IUPAC name of submitted substances, we decided not to
+compute systematic names locally.
 
 * Duplicates are assigned the same local Registry ID (i.e., UALIB-###). We check 
 for duplicates via the InChIKey, then update the original PubChem Substance record 
@@ -83,12 +84,13 @@ Garland, S. L.; Kidd, R.; Sweeney, J. B. The Creation and Characterisation of
 a National Compound Collection: The Royal Society of Chemistry Pilot. Chem. Sci. 2016,
 7 (6), 3869–3878. [DOI:10.1039/C6SC00264A](https://doi.org/10.1039/C6SC00264A)
 
+## Current Contributors
+
+Vincent F. Scalfani, Barbara Dahlbach, and Jacob Robertson
+
 ## Acknowledgments
 
-Special thanks to the following current and past contributors... list them here [will update
-tomorrow]
-
-We are also grateful to ChemAxon for providing the MarvinSketch Academic Research License (thanks!). 
+We are grateful to ChemAxon for providing the MarvinSketch Academic Research License.
 
 ## Notes on Copyright and Reuse
 

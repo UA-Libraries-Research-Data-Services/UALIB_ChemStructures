@@ -5,7 +5,7 @@
 # 
 # ### Vincent F. Scalfani
 
-# In[2]:
+# In[5]:
 
 
 from rdkit.Chem import AllChem as Chem
@@ -18,12 +18,13 @@ from rdkit.Chem import Draw
 from rdkit import DataStructs
 import numpy
 import pandas as pd
+import os # for changing directories
 
 import rdkit
 rdkit.__version__
 
 
-# In[3]:
+# In[6]:
 
 
 # Many thanks to Chris Swain's tutorial linked below, which helped me adapt the 
@@ -31,7 +32,7 @@ rdkit.__version__
 # https://www.macinchem.org/reviews/molsimilar/SimilarMyMolecules.html
 
 
-# In[4]:
+# In[7]:
 
 
 # Import the thesis chemical structure data
@@ -47,14 +48,16 @@ rdkit.__version__
 # [H]\C(CC)=C(/C)C(O)=O	UALIB-341	cis-2-Methyl-2-pentenoic acid	Eom, K.D. Total Synthesis of (+)-Asteltoxin. Ph.D. Thesis, The University of Alabama, 2000.	https://search.ebscohost.com/login.aspx?direct=true&db=cat00456a&AN=ua.1128100&site=eds-live&scope=site&custid=s4594951&groupid=main&profid=eds&authtype=ip,guest	JJYWRQLLQAKNAD-PLNGDYQASA-N
 # ...
 
-file_name_raw = '2000_Eom_KD_UA.1128100_substances_raw.csv' # change this line each time, that's it. 
+os.chdir('/home/username/UALIB_ChemStructures/StructureData/raw/CSV')
+
+file_name_raw = '1960_Baker_GM_UA.673860_substances_raw.csv' # change this line each time, that's it. 
 thesis_df = pd.read_csv(file_name_raw, sep = '\t')
 
 # view first 10 rows
 thesis_df.head(10)
 
 
-# In[5]:
+# In[8]:
 
 
 # Add RDKit Molecular Objects
@@ -62,7 +65,7 @@ PandasTools.AddMoleculeColumnToFrame(thesis_df,'SMILES_CHEMAXON_19.27.0','RDMol'
 print([str(x) for x in  thesis_df.columns])
 
 
-# In[6]:
+# In[9]:
 
 
 # rearrange table order
@@ -80,14 +83,14 @@ thesis_df = thesis_df[['RDMol',
 from IPython.display import HTML;HTML(thesis_df.head(len(thesis_df.index)).to_html()) 
 
 
-# In[7]:
+# In[10]:
 
 
 # we can also display just the molecules like this:
 PandasTools.FrameToGridImage(thesis_df,column= 'RDMol', molsPerRow=4,subImgSize=(300,300),legendsCol="DATASOURCE_REGID")
 
 
-# In[8]:
+# In[11]:
 
 
 # Now we need to caluclate the InChIs from RDKit and add to thesis_df
@@ -102,7 +105,7 @@ for mol in thesis_df['RDMol']:
 thesis_df['INCHI_1.05_RDKIT_2019.09.2']=inchi_list
 
 
-# In[9]:
+# In[12]:
 
 
 # Repeat for RDKit InChIKey
@@ -116,7 +119,7 @@ for mol in thesis_df['RDMol']:
 thesis_df['INCHIKEY_1.05_RDKIT_2019.09.2']=ik_list
 
 
-# In[10]:
+# In[13]:
 
 
 # Repeat for RDKit SMILES, write kekulized SMILES
@@ -132,13 +135,17 @@ for mol in thesis_df['RDMol']:
 thesis_df['SMILES_RDKIT_2019.09.2']=smiles_list
 
 
-# In[11]:
+# In[14]:
 
 
 # Export the SDF for PubChem upload
 
 # create the file name
 file_name_sdf = file_name_raw.replace('raw.csv','rdkit2019092.sdf')
+
+# cd
+os.chdir('/home/username/UALIB_ChemStructures/StructureData/rdkit_processed_sdf')
+
 
 PandasTools.WriteSDF(thesis_df,file_name_sdf, molColName='RDMol', 
     properties=['DATASOURCE_REGID',
@@ -149,7 +156,7 @@ PandasTools.WriteSDF(thesis_df,file_name_sdf, molColName='RDMol',
                 'SUBSTANCE_URL'])
 
 
-# In[12]:
+# In[15]:
 
 
 # Export to csv (tab seperated) without RDKit mol object image
@@ -167,6 +174,9 @@ sel_cols = ['DATASOURCE_REGID',
                 'INCHIKEY_1.05_CHEMAXON_19.27.0',
                 'SMILES_CHEMAXON_19.27.0']
 
+# cd
+os.chdir('/home/username/UALIB_ChemStructures/StructureData/rdkit_processed_csv')
+
 thesis_df.to_csv(file_name_csv, sep ='\t', index=False, columns = sel_cols)
 
 
@@ -176,11 +186,14 @@ thesis_df.to_csv(file_name_csv, sep ='\t', index=False, columns = sel_cols)
 
 
 
-# In[13]:
+# In[16]:
 
 
 # Create the SDfile for all indexed structures (run this after updating
 # UALIB_Chemical_Structures_REGID.csv and submitting to PubChem)
+
+# cd
+os.chdir('/home/username/UALIB_ChemStructures')
 
 All_df = pd.read_csv('UALIB_Chemical_Structures_REGID.csv', sep = '\t')
 
@@ -188,14 +201,13 @@ All_df = pd.read_csv('UALIB_Chemical_Structures_REGID.csv', sep = '\t')
 All_df.head(10)
 
 
-# In[15]:
+# In[17]:
 
 
 # Add RDKit Molecular Objects
 PandasTools.AddMoleculeColumnToFrame(All_df,'SMILES_RDKIT_2019.09.2**','Structure', includeFingerprints=False)
 
 # export the sdf
-#TODO change date to ISO 
 
 PandasTools.WriteSDF(All_df,'UALIB_Chemical_Structures_REGID.sdf', molColName='Structure', 
     properties=list(All_df.columns))
