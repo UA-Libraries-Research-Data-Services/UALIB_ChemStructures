@@ -1,0 +1,37 @@
+
+     RDKit          2D
+
+  7  6  0  0  0  0  0  0  0  0999 V2000
+    0.0000    0.0000    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.2990    0.7500    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.5981   -0.0000    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+    1.2990    2.2500    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+    2.5981    3.0000    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.5981    4.5000    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    3.8971    2.2500    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+  1  2  1  0
+  2  3  2  0
+  2  4  1  0
+  4  5  1  0
+  5  6  1  0
+  5  7  2  0
+M  END
+>  <DATASOURCE_REGID>  (1) 
+UALIB-377
+
+>  <SMILES_RDKIT_2019.09.2>  (1) 
+CC(=O)OC(C)=O
+
+>  <INCHI_1.05_RDKIT_2019.09.2>  (1) 
+InChI=1S/C4H6O3/c1-3(5)7-4(2)6/h1-2H3
+
+>  <SUBSTANCE_SYNONYM>  (1) 
+Acetic Anhydride
+
+>  <SUBSTANCE_COMMENT>  (1) 
+Hanna, C. Acetic Anhydride. M.S. Thesis, The University of Alabama, 1929.
+
+>  <SUBSTANCE_URL>  (1) 
+https://ir.ua.edu/handle/123456789/6419
+
+$$$$

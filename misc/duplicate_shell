@@ -1,4 +1,3 @@
 # useful shell command for checking duplicates
 
-$ sort list_of_Iks.txt | uniq --count --repeated
-
+$ sort InChIKeys_list.inchikey | uniq --count --repeated

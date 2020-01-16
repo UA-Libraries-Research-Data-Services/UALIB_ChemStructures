@@ -26,11 +26,8 @@ We are redrawing and encoding the structures ourselves.
 Essentially this includes small molecule organic chemistry with some
 limited organometallic chemical substances.
 
-* Chemical substances indexed must have synthetic experimental characterization
-details such as NMR, mass spec, elemental analysis, and melting point. 
-No judgment is made on the accuracy of the reported syntheses. 
-If the authors claimed they synthesized the substance in an experimental section and
-includes characterization data, we indexed it. 
+* Generally, chemical substances indexed must have synthetic experimental characterization
+details such as NMR, mass spec, elemental analysis, or melting point. The exception is with very early theses (e.g. 1920s), where we indexed the substances if they had some type of analytical or qualitative test. For all substances indexed, no judgment is made on the accuracy of the reported syntheses and characterization/testing methods. If the authors claimed they synthesized the substance in an experimental section that includes characterization data and/or analytical/qualitative tests, we indexed it. 
 
 * The substance name given in the dissertation is preferred and used. Sometimes
 this is a systematic name, other times it is simply "Compound 50" or "Diol 70a". 
