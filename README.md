@@ -43,7 +43,7 @@ with the additional thesis reference.
 We're still working on creating an optimal open workflow that is highly reproducible. Here is an overview of our current strategy:
 
 1. Draw chemical structures in [ChemAxon MarvinSketch](https://chemaxon.com/products/marvin). We really like the free [PubChem Sketcher](https://pubchem.ncbi.nlm.nih.gov/edit3/index.html) too, however, we found it much faster to use MarvinSketch.
-2. Export as Daylight ChemAxon SMILES (v19.27.0) and calculate InChIKeys (v1.05 as computed by ChemAxon molconvert v19.27.0)
+2. Export as ChemAxon SMILES (v19.27.0) and calculate InChIKeys (v1.05 as computed by ChemAxon molconvert v19.27.0)
 3. Create a tab delimited file with an index number for each compound (i.e., UALIB-###), 
 the name, citation, and permalink to the thesis. 
 4. Import the tabbed text file into an RDKit Pandas dataframe to calculate the 
@@ -65,7 +65,7 @@ InChIs, InChIKeys, write kekulized SMILES, and generate the SDfile (InChIs v1.05
 MarvinSketch v19.27 .mrv, .smi, and .inchikey chemical structure files.
 
 2. **/StructureData/raw/CSV** - files in here are the original indexing files which
-include ChemAxon MarvinSketch v19.27 Daylight SMILES, InChIKeys (v1.05 as computed by ChemAxon molconvert v19.27.0), our internal REGID, substance name, thesis citation, and permalink.
+include ChemAxon MarvinSketch v19.27 SMILES, InChIKeys (v1.05 as computed by ChemAxon molconvert v19.27.0), our internal REGID, substance name, thesis citation, and permalink.
 
 3. **/StructureData/rdkit_processed_csv** - same as number 2, only adding RDKit kekulized SMILES (RDKit 2019.09.2 release), calculated InChI and InChIKeys for the substances(InChIs v1.05 as computed by RDKit 2019.09.2 release). 
 
