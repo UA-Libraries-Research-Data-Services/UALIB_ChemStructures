@@ -5,7 +5,7 @@ Chemical Substances from The University of Alabama Dissertations and Theses
 This repository contains the original indexed chemical substances (non-standardized) 
 from The University of Alabama Dissertations and Theses (hereafter, theses). 
 
-**At the moment, there are about 400 structures, however, we are hoping to get to > 5000 structures in 6 months, so check back!**
+**At the moment, there are about 500 structures, however, we are hoping to get to 10,000 structures in 6 months, so check back!**
 
 Chemical structure data includes the name, SMILES, and InChI of all synthesized chemical
 structures within the thesis along with a permalink to the thesis full-text or 
