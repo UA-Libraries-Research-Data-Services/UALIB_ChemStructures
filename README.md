@@ -96,7 +96,7 @@ copyright to their own thesis.
 
 For all substances indexed, no judgment is made on the appropriateness of the synthetic method reported, safety precautions required, nor accuracy of the characterization data. Readers need to make their own assessment of the authors claims and procedures.
 
-We have only extracted and shared scientific facts (i.e., the chemical substances) and bibliographic
+We have only indexed and shared scientific facts (i.e., the chemical substances) and bibliographic
 information from the theses. Such scientific facts and bibliographic data are not subject 
 to U.S. copyright protection: 
 [Compendium of U.S. Copyright Office Practices](https://www.copyright.gov/comp3/).
@@ -106,15 +106,7 @@ from copyright protection, one of which includes chemical substances:
 ..."DNA sequences and other genetic, biological, or chemical substances or 
 compounds, regardless of whether they are man-made or produced by nature..."
 
-In an effort to fully comply with copyright, fair use, and standard scholarly 
-practice of reusing a thesis, we did not use any automated chemical structure 
-extraction software. Instead, we drew our own chemical structures by using 
-the theses as a reference and encoding the structures ourselves.
-
-With that said, we are grateful to the thesis authors for their contributions
-to science and have endeavored to credit their work respectfully and wherever 
-possible by including a citation reference and permalink. The citation references and
-permalinks are included on all shared chemical structure data including within
+We have endeavored to credit each thesis author respectfully by including a citation reference and permalink on all shared chemical structure data including within
 this Git Repository data files, The University of Alabama Institutional Repository,
 and PubChem Substance Pages.
 
