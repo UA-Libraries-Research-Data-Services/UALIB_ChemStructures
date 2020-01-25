@@ -2,56 +2,52 @@
 Chemical Substances from The University of Alabama Dissertations and Theses
 
 ## What is this?
-This repository contains the original indexed chemical substances (non-standardized) 
+This repository contains the machine-readable indexed chemical substances (non-standardized) 
 from The University of Alabama Dissertations and Theses (hereafter, theses). 
 
-**At the moment, there are about 500 structures, however, we are hoping to get to 10,000 structures in 6 months, so check back!**
+**At the moment, there are about 500 structures. Our goal is to share 10,000 structures by June 2020.**
 
 Chemical structure data includes the name, SMILES, and InChI of all synthesized chemical
-structures within the thesis along with a permalink to the thesis full-text or 
+substances within the thesis along with a permalink to the thesis full-text or 
 catalog link (if not yet available online), Moreover, an SDfile containing the connection table, name, 
 SMILES, InChI, citation, permalink, and local structure registry ID is included. 
 The RDKit processed SDfile is what we submit directly to PubChem. PubChem is likely where you want to download our 
-data from as PubChem handles the standardization of the chemical structures:
+data from as PubChem handles the standardization (on Compound database) of the chemical structures:
 [The University of Alabama Libraries PubChem Data Source](https://pubchem.ncbi.nlm.nih.gov/source/15645).
-However, this GitHub repository is useful for those seeking to download our non-standardized data
-and understand our workflow.
+However, this GitHub repository is useful for those seeking to download our non-standardized data, understand our workflow, and read our notes on copyright and reuse.
 
 ## How are we indexing the chemical structures?
 
-* This is a manually curated effort, no machine extraction. 
-We are redrawing and encoding the structures ourselves.
+This is a manually curated effort, no machine extraction. We are redrawing, encoding, and annotating the structures from the theses ourselves. See our workflow below for complete details.
 
-* We include only structures that can be represented with SMILES. 
-Essentially this includes small molecule organic chemistry with some
-limited organometallic chemical substances.
+## What structures are you including? 
 
-* Generally, chemical substances indexed must have synthetic experimental characterization
-details such as NMR, mass spec, elemental analysis, or melting point. The exception is with very early theses (e.g. 1920s), where we indexed the substances if they had some type of analytical or qualitative test. For all substances indexed, no judgment is made on the accuracy of the reported syntheses and characterization/testing methods. If the authors claimed they synthesized the substance in an experimental section that includes characterization data and/or analytical/qualitative tests, we indexed it. 
+There are two key requirements that must be met for us to index a substance:
 
-* The substance name given in the dissertation is preferred and used. Sometimes
-this is a systematic name, other times it is simply "Compound 50" or "Diol 70a". 
-Since PubChem computes the IUPAC name of submitted substances, we decided not to
-compute systematic names locally.
+1. The substance can be represented with the SMILES line notation. This includes most small molecule organic chemistry with some limited organometallic chemical substances.
 
-* Duplicates are assigned the same local Registry ID (i.e., UALIB-###). We check 
-for duplicates via the InChIKey, then update the original PubChem Substance record 
-with the additional thesis reference.
+2. Chemical substances indexed must have synthetic preparatory and some associated experimental characterization details such as NMR, mass spec, elemental analysis, or melting point. The exception is 
+with early theses (e.g. 1920s), where we indexed the substances if there was a preparation method with an associated analytical or qualitative test.
 
 ## What is your workflow? 
 
 We're still working on creating an optimal open workflow that is highly reproducible. Here is an overview of our current strategy:
 
 1. Draw chemical structures in [ChemAxon MarvinSketch](https://chemaxon.com/products/marvin). We really like the free [PubChem Sketcher](https://pubchem.ncbi.nlm.nih.gov/edit3/index.html) too, however, we found it much faster to use MarvinSketch.
-2. Export as ChemAxon SMILES (v19.27.0) and calculate InChIKeys (v1.05 as computed by ChemAxon molconvert v19.27.0)
-3. Create a tab delimited file with an index number for each compound (i.e., UALIB-###), 
-the name, citation, and permalink to the thesis. 
-4. Import the tabbed text file into an RDKit Pandas dataframe to calculate the 
-InChIs, InChIKeys, write kekulized SMILES, and generate the SDfile (InChIs v1.05 as computed by RDKit 2019.09.2 release).
-5. Compare RDKit and ChemAxon InChIKeys (this helps catch any issues with SMILES parsing across the toolkits). If the InChIKeys do not match, we figure out the issue before adding the structure to the index.
-6. Submit the SDfile to PubChem.
-7. Update the UALIB_Chemical_Structures_REGID files
-8. Create a record on our [Institutional Repository](https://ir.ua.edu/) with the SDfile.
+2. Export as ChemAxon SMILES (v19.27.0). Note that for organometallic dative bonds, we did not use SMILES extensions, but rather left these as disconnections (`.`) and then edited later (see step 8).
+3. Calculate InChIKeys (v1.05 as computed by ChemAxon molconvert v19.27.0).
+4. Create a tab delimited file with an index number for each substance (i.e., UALIB-###), 
+citation, permalink to the thesis, and substance name. The substance name given in the dissertation is used. Often this is a systematic or common name, other times it is simply "Compound 50" or "Diol 70a." Since PubChem computes the IUPAC name of submitted substances, we decided not to compute systematic names locally and use the name given in the thesis.
+5. Check for duplicates with prior indexed substances with the InChIKey using a shell sort command. Any duplicates are assigned the same local Registry ID (i.e., UALIB-###). The original PubChem Substance record is then updated with the additional thesis reference.
+6. Import the tabbed text file into an RDKit Pandas dataframe to calculate the 
+InChIs, InChIKeys, write kekulized SMILES, and generate the SDfile (InChIs v1.05 as computed by RDKit 2019.09.2 release). 
+7. Compare RDKit and ChemAxon InChIKeys (this helps catch any issues with SMILES parsing across the toolkits). If the InChIKeys do not match, we figure out the issue before adding the structure to the local Registry Index.
+8. If there were any organometallics with dative bonds, we manually added these to the SDfile using the PubChem nonstandard bond syntax. Note: we did experiment with using the dative bonds feature in RDKit with SMILES (`->, <-`) and V3000 molfile, but these files did not parse correctly in PubChem. 
+9. Submit the SDfile to PubChem. 
+10. Update the UALIB_Chemical_Structures_REGID files
+11. Create a record on our [Institutional Repository](https://ir.ua.edu/) with the SDfile and associated thesis references.
+
+**N.B. The PubChem folks are awesome and created a custom automated script for our submissions that automatically add annotations to the PubChem Compound pages. These annotations add the thesis reference under "Synthesis".** 
 
 ## File Overview Notes
 
@@ -83,33 +79,34 @@ a National Compound Collection: The Royal Society of Chemistry Pilot. Chem. Sci.
 
 ## Current Contributors
 
-Vincent F. Scalfani, Barbara Dahlbach, and Jacob Robertson
+Vincent F. Scalfani (Chemical Indexing), Barbara Dahlbach (Digitization of full text Theses), and Jacob Robertson (Institutional Repository Records).
 
 ## Acknowledgments
 
-We are grateful to ChemAxon for providing the MarvinSketch Academic Research License.
+VFS thanks The University of Alabama and The University of Alabama Libraries for approving research sabbatical leave for this project. We are grateful to ChemAxon for providing the MarvinSketch Academic Research License.
 
 ## Notes on Copyright and Reuse
 
-Disclaimer: Not legal advice, just our own personal (non-lawyer) thoughtful 
-interpretation.
+**Disclaimer: Not legal advice, just our own personal (non-lawyer) thoughtful notes.**
 
 The purpose of The University of Alabama Dissertation and Thesis indexing project 
 is to allow greater discovery, use, and credit of the original authors' theses, 
 not to claim any ownership of the written thesis content. The thesis authors hold the 
 copyright to their own thesis.
 
-We have only extracted and shared scientific facts (i.e., the chemical structures) and bibliographic
+For all substances indexed, no judgment is made on the appropriateness of the synthetic method reported, safety precautions required, nor accuracy of the characterization data. Readers need to make their own assessment of the authors claims and procedures.
+
+We have only extracted and shared scientific facts (i.e., the chemical substances) and bibliographic
 information from the theses. Such scientific facts and bibliographic data are not subject 
 to U.S. copyright protection: 
 [Compendium of U.S. Copyright Office Practices](https://www.copyright.gov/comp3/).
 See specifically section 313.3(A), where examples are listed that are excluded 
-from copyright protection, one of which mentions chemical structures:
+from copyright protection, one of which includes chemical substances:
 
 ..."DNA sequences and other genetic, biological, or chemical substances or 
 compounds, regardless of whether they are man-made or produced by nature..."
 
-In an effort to fully comply with copyright, Fair Use, and standard scholarly 
+In an effort to fully comply with copyright, fair use, and standard scholarly 
 practice of reusing a thesis, we did not use any automated chemical structure 
 extraction software. Instead, we drew our own chemical structures by using 
 the theses as a reference and encoding the structures ourselves.
@@ -121,7 +118,7 @@ permalinks are included on all shared chemical structure data including within
 this Git Repository data files, The University of Alabama Institutional Repository,
 and PubChem Substance Pages.
 
-Our intention is for you to reuse the chemical structures 
+Our intention is for you to reuse the chemical structure data 
 however you like. All chemical structure data in this repository is licensed 
 with [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/). Please give the 
 original authors of the theses credit by citing their work and following 
@@ -129,5 +126,5 @@ standard scholarly practice for reuse of the scientific literature,
 particularly if the chemical structure has led you to useful content within their 
 thesis (as noted above, each thesis Author holds their own copyright). If you are
 reusing a large corpus of the structures as a dataset, then it is appreciated 
-if you cite our work as we put the effort into the indexing and data compilation. Lastly, any code in this repository is licensed under the BSD-2 license.
+if you cite our work (The University of Alabama Libraries) as we put the effort into the indexing and data compilation. Lastly, any code in this repository is licensed under the BSD-2 license.
 
