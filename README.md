@@ -47,7 +47,7 @@ InChIs, InChIKeys, write kekulized SMILES, and generate the SDfile (InChIs v1.05
 10. Update the UALIB_Chemical_Structures_REGID files
 11. Create a record on our [Institutional Repository](https://ir.ua.edu/) with the SDfile and associated thesis references.
 
-**N.B. The PubChem folks are awesome and created a custom automated script for our submissions that automatically add annotations to the PubChem Compound pages. These annotations add the thesis reference under "Synthesis".** 
+**N.B. The PubChem folks are awesome and created a custom script for our submissions that add annotations to the PubChem Compound pages. These annotations add the thesis reference under "Synthesis".** 
 
 ## File Overview Notes
 
@@ -126,5 +126,5 @@ standard scholarly practice for reuse of the scientific literature,
 particularly if the chemical structure has led you to useful content within their 
 thesis (as noted above, each thesis Author holds their own copyright). If you are
 reusing a large corpus of the structures as a dataset, then it is appreciated 
-if you cite our work (The University of Alabama Libraries) as we put the effort into the indexing and data compilation. Lastly, any code in this repository is licensed under the BSD-2 license.
+if you cite our work as we put the effort into the indexing and data compilation. Lastly, any code in this repository is licensed under the BSD-2 license.
 
