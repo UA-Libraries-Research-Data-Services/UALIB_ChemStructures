@@ -5,7 +5,7 @@ Chemical Substances from The University of Alabama Dissertations and Theses
 This repository contains the machine-readable indexed chemical substances (non-standardized) 
 from The University of Alabama Dissertations and Theses (hereafter, theses). 
 
-**At the moment, there are about 500 structures. Our goal is to share 10,000 structures by June 2020.**
+**At the moment, there are about 700 structures. Our goal is to share 10,000 structures by June 2020.**
 
 Chemical structure data includes the name, SMILES, and InChI of all synthesized chemical
 substances within the thesis along with a permalink to the thesis full-text or 
@@ -31,13 +31,13 @@ with early theses (e.g. 1920s), where we indexed the substances if there was a p
 
 ## What is your workflow? 
 
-We're still working on creating an optimal open workflow that is highly reproducible. Here is an overview of our current strategy:
+We are still working on creating an optimal open workflow that is highly reproducible. Here is an overview of our current strategy:
 
-1. Draw chemical structures in [ChemAxon MarvinSketch](https://chemaxon.com/products/marvin). We really like the free [PubChem Sketcher](https://pubchem.ncbi.nlm.nih.gov/edit3/index.html) too, however, we found it much faster to use MarvinSketch.
+1. Draw chemical structures in [ChemAxon MarvinSketch](https://chemaxon.com/products/marvin). We also like the free [PubChem Sketcher](https://pubchem.ncbi.nlm.nih.gov/edit3/index.html) too, however, we found it much faster to use MarvinSketch.
 2. Export as ChemAxon SMILES (v19.27.0). Note that for organometallic dative bonds, we did not use SMILES extensions, but rather left these as disconnections (`.`) and then edited later (see step 8).
 3. Calculate InChIKeys (v1.05 as computed by ChemAxon molconvert v19.27.0).
 4. Create a tab delimited file with an index number for each substance (i.e., UALIB-###), 
-citation, permalink to the thesis, and substance name. The substance name given in the dissertation is used. Often this is a systematic or common name, other times it is simply "Compound 50" or "Diol 70a." Since PubChem computes the IUPAC name of submitted substances, we decided not to compute systematic names locally and use the name given in the thesis.
+citation, permalink to the thesis, and substance name. The substance name given in the dissertation is used. Often the name is a systematic or common name, but other times the only name given is a non-descriptive name like "Compound 50". Since PubChem computes the IUPAC name of submitted substances, we decided not to compute systematic names locally and use the name given in the thesis. Non-descriptive names such as "Compound 50" were generally not submitted to PubChem as these have limited value to the searcher. In addition, when it was obvious that there was a structure to name mismatch, we assumed the structure was correct, and did not submit the name to PubChem. Both the non-descriptive names and mismatched names were maintained in the local raw data files for reference.
 5. Check for duplicates with prior indexed substances with the InChIKey using a shell sort command. Any duplicates are assigned the same local Registry ID (i.e., UALIB-###). The original PubChem Substance record is then updated with the additional thesis reference.
 6. Import the tabbed text file into an RDKit Pandas dataframe to calculate the 
 InChIs, InChIKeys, write kekulized SMILES, and generate the SDfile (InChIs v1.05 as computed by RDKit 2019.09.2 release). 
