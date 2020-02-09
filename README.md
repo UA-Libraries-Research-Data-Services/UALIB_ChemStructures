@@ -5,7 +5,7 @@ Chemical Substances from The University of Alabama Dissertations and Theses
 This repository contains the machine-readable indexed chemical substances (non-standardized) 
 from The University of Alabama Dissertations and Theses (hereafter, theses). 
 
-**At the moment, there are about 700 structures. Our goal is to share 10,000 structures by June 2020.**
+**At the moment, there are about 1000 structures. Our goal is to share 5000 structures by June 2020.**
 
 Chemical structure data includes the name, SMILES, and InChI of all synthesized chemical
 substances within the thesis along with a permalink to the thesis full-text or 
@@ -106,7 +106,7 @@ from copyright protection, one of which includes chemical substances:
 ..."DNA sequences and other genetic, biological, or chemical substances or 
 compounds, regardless of whether they are man-made or produced by nature..."
 
-We have endeavored to credit each thesis author respectfully by including a citation reference and permalink on all shared chemical structure data including within
+We have endeavored to credit each thesis author respectfully by including a citation reference and permalink (where possible) on all shared chemical structure data including within
 this Git Repository data files, The University of Alabama Institutional Repository,
 and PubChem Substance Pages.
 
