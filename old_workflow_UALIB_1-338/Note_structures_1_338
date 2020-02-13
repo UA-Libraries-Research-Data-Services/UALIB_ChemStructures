@@ -1,8 +1,0 @@
-# When we started this indexing project, we experimented with several different 
-workflows.
-
-Structures UALIB_1 through UALIB-338 were compiled in either ChemDraw for Excel
-or ChemAxon for Excel. The compiled structures, associated identifiers, and 
-bibliographic data were then exported as an SDfile from the Excel plugins. We
-have included the original data as a tab text file.
-
