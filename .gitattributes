@@ -6,6 +6,7 @@
 *.jpg binary
 *.png binary
 *.ods binary
+*.dsf binary
 
 # do not convert line endings on .sdf files, keep them as unix LF
 
