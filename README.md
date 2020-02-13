@@ -7,11 +7,10 @@ from The University of Alabama Dissertations and Theses (hereafter, theses).
 
 **At the moment, there are about 1000 structures. Our goal is to share 5000 structures by June 2020.**
 
-Chemical structure data includes the name, SMILES, and InChI of all synthesized chemical
+Chemical structure data includes the name, SMILES, and InChI of synthesized chemical
 substances within the thesis along with a permalink to the thesis full-text or 
 catalog link (if not yet available online), Moreover, an SDfile containing the connection table, name, 
-SMILES, InChI, citation, permalink, and local structure registry ID is included. 
-The RDKit processed SDfile is what we submit directly to PubChem. PubChem is likely where you want to download our 
+SMILES, InChI, citation, permalink, and local structure registry ID is included. PubChem is likely where you want to download our 
 data from as PubChem handles the standardization (on Compound database) of the chemical structures:
 [The University of Alabama Libraries PubChem Data Source](https://pubchem.ncbi.nlm.nih.gov/source/15645).
 However, this GitHub repository is useful for those seeking to download our non-standardized data, understand our workflow, and read our notes on copyright and reuse.
@@ -26,28 +25,39 @@ There are two key requirements that must be met for us to index a substance:
 
 1. The substance can be represented with the SMILES line notation. This includes most small molecule organic chemistry with some limited organometallic chemical substances.
 
-2. Chemical substances indexed must have synthetic preparatory and some associated experimental characterization details such as NMR, mass spec, elemental analysis, or melting point. The exception is 
-with early theses (e.g. 1920s), where we indexed the substances if there was a preparation method with an associated analytical or qualitative test.
+2. Chemical substances indexed have synthetic preparatory procedures and some associated experimental characterization details such as NMR, mass spec, elemental analysis, IR, or melting point. The exception is 
+with early theses (e.g., 1920s), where we indexed the substances if there was a preparation method with an associated analytical or qualitative test.
 
 ## What is your workflow? 
 
 We are still working on creating an optimal open workflow that is highly reproducible. Here is an overview of our current strategy:
 
-1. Draw chemical structures in [ChemAxon MarvinSketch](https://chemaxon.com/products/marvin). We also like the free [PubChem Sketcher](https://pubchem.ncbi.nlm.nih.gov/edit3/index.html) too, however, we found it much faster to use MarvinSketch.
-2. Export as ChemAxon SMILES (v19.27.0). Note that for organometallic dative bonds, we did not use SMILES extensions, but rather left these as disconnections (`.`) and then edited later (see step 8).
+**Main Workflow for Most Substances**
+
+1. Draw chemical structures in [ChemAxon MarvinSketch](https://chemaxon.com/products/marvin).
+2. Export as ChemAxon SMILES (v19.27.0). 
 3. Calculate InChIKeys (v1.05 as computed by ChemAxon molconvert v19.27.0).
 4. Create a tab delimited file with an index number for each substance (i.e., UALIB-###), 
-citation, permalink to the thesis, and substance name. The substance name given in the dissertation is used. Often the name is a systematic or common name, but other times the only name given is a non-descriptive name like "Compound 50". Since PubChem computes the IUPAC name of submitted substances, we decided not to compute systematic names locally and use the name given in the thesis. Non-descriptive names such as "Compound 50" were generally not submitted to PubChem as these have limited value to the searcher. In addition, when it was obvious that there was a structure to name mismatch, we assumed the structure was correct, and did not submit the name to PubChem. Both the non-descriptive names and mismatched names were maintained in the local raw data files for reference.
+citation, permalink to the thesis record, and substance name. The substance name given in the dissertation is used. Often the name is a systematic or common name, but other times the only name given is a non-descriptive name like "Compound 50". Since PubChem computes the IUPAC name of submitted substances, we decided not to compute systematic names locally and use the name given in the thesis. Non-descriptive names such as "Compound 50" were generally not submitted to PubChem as these have limited value to the searcher. In addition, when it was obvious that there was a structure to name mismatch, we assumed the structure was correct, and did not submit the name to PubChem. Both the non-descriptive names and mismatched names were maintained in the local raw data files for reference.
 5. Check for duplicates with prior indexed substances with the InChIKey using a shell sort command. Any duplicates are assigned the same local Registry ID (i.e., UALIB-###) and noted in the REGID file.
 6. Import the tabbed text file into an RDKit Pandas dataframe to calculate the 
 InChIs, InChIKeys, write kekulized SMILES, and generate the SDfile (InChIs v1.05 as computed by RDKit 2019.09.2 release). 
 7. Compare RDKit and ChemAxon InChIKeys (this helps catch any issues with SMILES parsing across the toolkits). If the InChIKeys do not match, we figure out the issue before adding the structure to the local Registry Index.
-8. If there were any organometallics with dative bonds, we manually added these to the SDfile using the PubChem nonstandard bond syntax. Note: we did experiment with using the dative bonds feature in RDKit with SMILES (`->, <-`) and V3000 molfile, but these files did not parse correctly in PubChem. 
-9. Submit the SDfile to PubChem. 
-10. Update the UALIB_Chemical_Structures_REGID files
-11. Create a record on our [Institutional Repository](https://ir.ua.edu/) with the SDfile and associated thesis references.
+8. Submit the SDfile to PubChem. 
+9. Update the UALIB_Chemical_Structures_REGID files
+10. Create a record on our [Institutional Repository](https://ir.ua.edu/) with the SDfile and associated thesis references.
 
-**N.B. The PubChem folks are awesome and created a custom script for our submissions that add annotations to the PubChem Compound pages. These annotations add the thesis reference under "Synthesis".** 
+**Special Case: Dative Bonds Workflow**
+
+For organometallic dative bonds, we did not use SMILES extensions, but rather left these as disconnections (`.`). Dative bonds were then added to the RDKit processed SDfile using the PubChem nonstandard bond syntax. Note: we did experiment with using the dative bonds feature in RDKit with SMILES (`->, <-`) and V3000 molfiles, but these files did not parse correctly in PubChem. 
+
+
+**Special Case: Chair/Multicyclic Stereochemistry Workflow**
+
+When substances were drawn as Chair conformations and complex multicyclic structures with the thesis, we used Bio-Rad's KnowItAll 2018 to determine the correct stereochemistry and export as SMILES. The Bio-Rad KnowItAll SMILES were then submitted directly to PubChem without any further processing.
+
+
+**N.B. The PubChem folks are awesome and created a custom script for our submissions that adds annotations to the PubChem Compound pages. These annotations add the thesis reference under "Synthesis".** 
 
 ## File Overview Notes
 
@@ -55,18 +65,20 @@ InChIs, InChIKeys, write kekulized SMILES, and generate the SDfile (InChIs v1.05
 
  * UALIB_Chemical_Structures_REGID.ods (LibreOffice Calc)
  * UALIB_Chemical_Structures_REGID.csv (tab delimited)
- * UALIB_Chemical_Structures_REGID.sdf (SDfile)
+ * UALIB_Chemical_Structures_REGID.sdf (SDfile) - **CAUTION:** the compiled REGID SDfile is provided as a convenience (and intended for our own internal use), please be aware that the SMILES are reprocessed from the .csv to create the RDKit connection tables and thus differ from the workflows outlined above. As a result, unknown changes to molecules may be incorporated. We recommend downloading our data directly from PubChem instead.
+
+2. **/StructureData/KnowItAll_processed_csv** - KnowItAll 2018 processed SMILES and InChI compiled CSV files submitted to PubChem. 
 
 2. **/StructureData/raw/CA_Marvin_19.27.0** - files in here are the original ChemAxon 
 MarvinSketch v19.27 .mrv, .smi, and .inchikey chemical structure files.
 
-2. **/StructureData/raw/CSV** - files in here are the original indexing files which
+3. **/StructureData/raw/CSV** - original indexing files which
 include ChemAxon MarvinSketch v19.27 SMILES, InChIKeys (v1.05 as computed by ChemAxon molconvert v19.27.0), our internal REGID, substance name, thesis citation, and permalink.
 
 3. **/StructureData/rdkit_processed_csv** - same as number 2, only adding RDKit kekulized SMILES (RDKit 2019.09.2 release), calculated InChI and InChIKeys for the substances(InChIs v1.05 as computed by RDKit 2019.09.2 release). 
 
-4. **/StructureData/rdkit_processed_sdf** - SDfile containing RDKit connection table, and 
-the following SDfile data: SMILES (RDKit 2019.09.2 release), InChI (v1.05 as computed by RDKit 2019.09.2 release), our internal REGID, substance name, thesis citation, and permalink. These files are submitted to PubChem.
+4. **/StructureData/rdkit_processed_sdf** - SDfiles containing RDKit connection table, and 
+the following SDfile data: SMILES (RDKit 2019.09.2 release), InChI (v1.05 as computed by RDKit 2019.09.2 release), our internal REGID, substance name, thesis citation, and permalink. These files are submitted to PubChem. Note if you see multiple SDfiles for the same thesis, some manual modifications were made to the file such as adding dative bond annotations or removing non-descriptive substance names. These files will end with the word _edited. The _edited files are what was submitted to PubChem in cases where there are multiple SDfiles for the same thesis. 
 
 ## References
 
@@ -83,7 +95,7 @@ Vincent F. Scalfani (Chemical Indexing), Barbara Dahlbach (Digitization of full 
 
 ## Acknowledgments
 
-VFS thanks The University of Alabama and The University of Alabama Libraries for approving research sabbatical leave for this project. We are grateful to ChemAxon for providing the MarvinSketch Academic Research License.
+VFS thanks The University of Alabama and The University of Alabama Libraries for approving research sabbatical leave for this project. We are grateful to ChemAxon for providing the MarvinSketch academic license and Bio-Rad for providing the KnowItAll academic license.
 
 ## Notes on Copyright and Reuse
 
