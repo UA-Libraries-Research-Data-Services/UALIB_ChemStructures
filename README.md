@@ -34,14 +34,14 @@ We are still working on creating an optimal open workflow that is highly reprodu
 
 **Main Workflow for Most Substances**
 
-1. Draw chemical structures in [ChemAxon MarvinSketch](https://chemaxon.com/products/marvin).
-2. Export as ChemAxon SMILES (v19.27.0). 
+1. Draw chemical structures in [ChemAxon MarvinSketch](https://chemaxon.com/products/marvin). We endeavored to accurately represent the structures as originally drawn, however in some cases we needed to standardize the structures (see Internal Standardization below).
+2. Export as ChemAxon SMILES (v19.27.0). The Daylight variant was typically used. Exceptions are when we needed to represent enhanced stereochemistry or radicals. In these cases, CXSMILES were used.  
 3. Calculate InChIKeys (v1.05 as computed by ChemAxon molconvert v19.27.0).
 4. Create a tab delimited file with an index number for each substance (i.e., UALIB-###), 
 citation, permalink to the thesis record, and substance name. The substance name given in the dissertation is used. Often the name is a systematic or common name, but other times the only name given is a non-descriptive name like "Compound 50". Since PubChem computes the IUPAC name of submitted substances, we decided not to compute systematic names locally and use the name given in the thesis. Non-descriptive names such as "Compound 50" were generally not submitted to PubChem as these have limited value to the searcher. In addition, when it was obvious that there was a structure to name mismatch, we assumed the structure was correct, and did not submit the name to PubChem. Both the non-descriptive names and mismatched names were maintained in the local raw data files for reference.
 5. Check for duplicates with prior indexed substances with the InChIKey using a shell sort command. Any duplicates are assigned the same local Registry ID (i.e., UALIB-###) and noted in the REGID file.
 6. Import the tabbed text file into an RDKit Pandas dataframe to calculate the 
-InChIs, InChIKeys, write kekulized SMILES, and generate the SDfile (InChIs v1.05 as computed by RDKit 2019.09.2 release). 
+InChIs, InChIKeys (InChIs v1.05 as computed by RDKit 2019.09.2 release), write kekulized SMILES, and generate the SDfile. Note that enhanced stereochemistry and radicals are not represented in RDKit SMILES, but they are flagged in the connection table. 
 7. Compare RDKit and ChemAxon InChIKeys (this helps catch any issues with SMILES parsing across the toolkits). If the InChIKeys do not match, we figure out the issue before adding the structure to the local Registry Index.
 8. Submit the SDfile to PubChem. 
 9. Update the UALIB_Chemical_Structures_REGID files
@@ -56,6 +56,15 @@ For organometallic dative bonds, we did not use SMILES extensions, but rather le
 
 When substances were drawn as Chair conformations and complex multicyclic structures with the thesis, we used Bio-Rad's KnowItAll 2018 to determine the correct stereochemistry and export as SMILES. The Bio-Rad KnowItAll SMILES were then submitted directly to PubChem without any further processing.
 
+**Internal Standardization**
+
+In most cases, we were able to accurately draw the chemical substances as the author originally drew them with either standard covalent or a dative bonds. However, in some cases, we needed to make choices on how to best represent the structures such that both humans and cheminformatics software can best interpret them based on the limitations of valence rules. As such, these are the internal standardization rules we applied in an effort to best represent what the author originally meant:
+
+a. Phosphine Ligands (e.g., triphenylphosphine) were drawn as dative bonds to a metal.
+b. Phosphorous Selenium bonds were standardized to double bonds.
+c. Carbene to metal bonds were standardized to double bonds.
+
+PubChem further standardizes the structures on the Compound pages.
 
 **N.B. The PubChem folks are awesome and created a custom script for our submissions that adds annotations to the PubChem Compound pages. These annotations add the thesis reference under "Synthesis".** 
 
