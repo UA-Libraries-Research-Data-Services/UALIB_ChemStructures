@@ -43,7 +43,7 @@ citation, permalink to the thesis record, and substance name. The substance name
 6. Import the tabbed text file into an RDKit Pandas dataframe to calculate the 
 InChIs, InChIKeys (InChIs v1.05 as computed by RDKit 2019.09.2 release), write kekulized SMILES, and generate the SDfile. Note that enhanced stereochemistry and radicals are not represented in RDKit SMILES, but they are flagged in the connection table. 
 7. Compare RDKit and ChemAxon InChIKeys (this helps catch any issues with SMILES parsing across the toolkits). If the InChIKeys do not match, we figure out the issue before adding the structure to the local Registry Index.
-8. Submit the SDfile to PubChem. 
+8. Submit the SDfile to PubChem.
 9. Update the UALIB_Chemical_Structures_REGID files
 10. Create a record on our [Institutional Repository](https://ir.ua.edu/) with the SDfile and associated thesis references.
 
@@ -60,9 +60,9 @@ When substances were drawn as Chair conformations and complex multicyclic struct
 
 In most cases, we were able to accurately draw the chemical substances as the author originally drew them with either standard covalent or a dative bonds. However, in some cases, we needed to make choices on how to best represent the structures such that both humans and cheminformatics software can best interpret them based on the limitations of valence rules. As such, these are the internal standardization rules we applied in an effort to best represent what the author originally meant:
 
-a. Phosphine Ligands (e.g., triphenylphosphine) were drawn as dative bonds to a metal.
-b. Phosphorous Selenium bonds were standardized to double bonds.
-c. Carbene to metal bonds were standardized to double bonds.
+1. Phosphine Ligands (e.g., triphenylphosphine) were drawn as dative bonds to a metal.
+2. Phosphorous Selenium bonds were standardized to double bonds.
+3. Carbene to metal bonds were standardized to double bonds.
 
 PubChem further standardizes the structures on the Compound pages.
 
@@ -78,16 +78,16 @@ PubChem further standardizes the structures on the Compound pages.
 
 2. **/StructureData/KnowItAll_processed_csv** - KnowItAll 2018 processed SMILES and InChI compiled CSV files submitted to PubChem. 
 
-2. **/StructureData/raw/CA_Marvin_19.27.0** - files in here are the original ChemAxon 
+3. **/StructureData/raw/CA_Marvin_19.27.0** - files in here are the original ChemAxon 
 MarvinSketch v19.27 .mrv, .smi, and .inchikey chemical structure files.
 
-3. **/StructureData/raw/CSV** - original indexing files which
+4. **/StructureData/raw/CSV** - original indexing files which
 include ChemAxon MarvinSketch v19.27 SMILES, InChIKeys (v1.05 as computed by ChemAxon molconvert v19.27.0), our internal REGID, substance name, thesis citation, and permalink.
 
-3. **/StructureData/rdkit_processed_csv** - same as number 2, only adding RDKit kekulized SMILES (RDKit 2019.09.2 release), calculated InChI and InChIKeys for the substances(InChIs v1.05 as computed by RDKit 2019.09.2 release). 
+5. **/StructureData/rdkit_processed_csv** - same as number 2, only adding RDKit kekulized SMILES (RDKit 2019.09.2 release), calculated InChI and InChIKeys for the substances(InChIs v1.05 as computed by RDKit 2019.09.2 release). 
 
-4. **/StructureData/rdkit_processed_sdf** - SDfiles containing RDKit connection table, and 
-the following SDfile data: SMILES (RDKit 2019.09.2 release), InChI (v1.05 as computed by RDKit 2019.09.2 release), our internal REGID, substance name, thesis citation, and permalink. These files are submitted to PubChem. Note if you see multiple SDfiles for the same thesis, some manual modifications were made to the file such as adding dative bond annotations or removing non-descriptive substance names. These files will end with the word _edited. The _edited files are what was submitted to PubChem in cases where there are multiple SDfiles for the same thesis. 
+6. **/StructureData/rdkit_processed_sdf** - SDfiles containing RDKit connection table, and 
+the following SDfile data: SMILES (RDKit 2019.09.2 release), InChI (v1.05 as computed by RDKit 2019.09.2 release), our internal REGID, substance name, thesis citation, and permalink.
 
 ## References
 
