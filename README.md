@@ -38,7 +38,7 @@ We are still working on creating an optimal open workflow that is highly reprodu
 2. Export as ChemAxon SMILES (v19.27.0). The Daylight variant was typically used. Exceptions are when we needed to represent enhanced stereochemistry or radicals. In these cases, CXSMILES were used.  
 3. Calculate InChIKeys (v1.05 as computed by ChemAxon molconvert v19.27.0).
 4. Create a tab delimited file with an index number for each substance (i.e., UALIB-###), 
-citation, permalink to the thesis record, and substance name. The substance name given in the dissertation is used. Often the name is a systematic or common name, but other times the only name given is a non-descriptive name like "Compound 50". Since PubChem computes the IUPAC name of submitted substances, we decided not to compute systematic names locally and use the name given in the thesis. Non-descriptive names such as "Compound 50" were generally not submitted to PubChem as these have limited value to the searcher. In addition, when it was obvious that there was a structure to name mismatch, we assumed the structure was correct, and did not submit the name to PubChem. Both the non-descriptive names and mismatched names were maintained in the local raw data files for reference.
+citation, permalink to the thesis record, and substance name. The substance name given in the dissertation is used. Often the name is a systematic or common name, but other times the only name given is a non-descriptive name like "Compound 50". Since PubChem computes the IUPAC name of submitted substances, we decided not to compute systematic names locally and use the name given in the thesis. Non-descriptive names such as "Compound 50" were generally not submitted to PubChem as these have limited value to the searcher. In addition, when it was obvious that there was a structure to name mismatch, we assumed the structure was correct, and did not submit the name to PubChem. Both the non-descriptive names and mismatched names were maintained in the local raw data files for reference. Racemic mixtures as indicated by the compound names (e.g., (±), R*) were drawn as enantiomers and maintained in one REGID record as two components.
 5. Check for duplicates with prior indexed substances with the InChIKey using a shell sort command. Any duplicates are assigned the same local Registry ID (i.e., UALIB-###) and noted in the REGID file.
 6. Import the tabbed text file into an RDKit Pandas dataframe to calculate the 
 InChIs, InChIKeys (InChIs v1.05 as computed by RDKit 2019.09.2 release), write kekulized SMILES, and generate the SDfile. Note that enhanced stereochemistry and radicals are not represented in RDKit SMILES, but they are flagged in the connection table. 
@@ -50,7 +50,6 @@ InChIs, InChIKeys (InChIs v1.05 as computed by RDKit 2019.09.2 release), write k
 **Special Case: Dative Bonds Workflow**
 
 For organometallic dative bonds, we did not use SMILES extensions, but rather left these as disconnections (`.`). Dative bonds were then added to the RDKit processed SDfile using the PubChem nonstandard bond syntax. Note: we did experiment with using the dative bonds feature in RDKit with SMILES (`->, <-`) and V3000 molfiles, but these files did not parse correctly in PubChem. 
-
 
 **Special Case: Chair/Multicyclic Stereochemistry Workflow**
 
