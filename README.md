@@ -65,11 +65,15 @@ In most cases, we were able to accurately draw the chemical substances as the au
 
 PubChem further standardizes the structures on the Compound pages.
 
-**Note on Stereoisomeric Mixtures and non-specific bonds**
+**Note on Configuration, Non-specific bonds (e.g., wavy), and Stereochemical Mixtures**
 
-Racemic mixtures (e.g., as indicated by the substance names, (±), S* or R*) were drawn as enantiomers and maintained in one REGID record as two components. A similar method was used for diastereomeric or enantiomeric mixtures. Generally, these were drawn as two separate components in one REGID when it was inferred that the purified product was a mixture. It is not always an unambiguous interpretation of the final product (i.e., separately isolated substances or a purified mixture). However, there were certain clues from the Authors that we used to make a decision, such as identifying a major/minor product in NMR spectra data, tabulating dr/ee ratios, or referring to the product as a "major product" in the experimental. When substances were drawn by the authors with one or more stereo non-specific bonds (e.g., wavy bonds), we reproduced these stereocenters as stereo non-specific, unless there was data that suggested the final product was a mixture. That is, we often could not infer if the stereo non-specific notation meant a mixture of stereoisomers or a way to emphasize unknown stereochemistry, which is equivalent to a plain bond.
+In most cases, we drew the substances however the author depicted the double bond configuration and/or tetrahedral stereochemistry.
 
-Note that PubChem does not yet support ratios of stereoisomers, so depositions do not indicate the relative stereoisomeric ratios (dr,ee).
+When substances were drawn by an author with one or more stereo non-specific wavy bonds, we also reproduced these substances as drawn with the non-specific stereocenters (equivalent to having plain bonds). (See: [IUPAC Graphical Representation of Stereochemical Configuration](https://doi.org/10.1351/pac200678101897)). However, when additional information was provided such that the final product was an identified mixture of enantiomers or diasteriomers, we drew both substance configurations and combined them into one REGID as two components.
+
+Similarly, racemic, diastereomeric (dr), and enantiomeric (ee) mixtures were drawn as two components and maintained in one REGID record when it was inferred that the purified product was a mixture, and not one isolated stereoisomer. Clues that help included the substance name, the Author identifying a major/minor product in NMR spectra data, tabulating dr/ee ratios, or referring to the product in the experimental as a major product or inseparable mixture. Note: in cases where the diastereomeric mixture was not easily identifiable (i.e., not clear which stereocenter(s) or bonds to flip), we drew those as stereo non-specific single component substances.
+
+PubChem does not yet support ratios of stereoisomers, so depositions do not indicate the relative stereoisomeric ratios (dr,ee).
 
 **N.B. The PubChem folks are awesome and created a custom script for our submissions that adds annotations to the PubChem Compound pages. These annotations add the thesis reference under "Synthesis".** 
 
