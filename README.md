@@ -5,13 +5,11 @@ Chemical Substances from The University of Alabama Dissertations and Theses
 This repository contains the machine-readable indexed chemical substances (non-standardized) 
 from The University of Alabama Dissertations and Theses (hereafter, theses). 
 
-**At the moment, there are about 1000 structures. Our goal is to share 5000 structures by June 2020.**
+**At the moment, there are about 1500 structures. Our goal is to share 5000 structures by June 2020**
 
-Chemical structure data includes the name, SMILES, and InChI of synthesized chemical
+Chemical structure data includes the name (or ID), SMILES, and InChI of synthesized chemical
 substances within the thesis along with a permalink to the thesis full-text or 
-catalog link (if not yet available online), Moreover, an SDfile containing the connection table, name, 
-SMILES, InChI, citation, permalink, and local structure registry ID is included. PubChem is likely where you want to download our 
-data from as PubChem handles the standardization (on Compound database) of the chemical structures:
+catalog link (if not yet available online), Moreover, an SDfile containing the connection table, name (or ID), SMILES, InChI, citation, permalink, and local structure registry ID is included. PubChem is likely where you want to download our data from as PubChem handles the standardization (on Compound database) of the chemical structures:
 [The University of Alabama Libraries PubChem Data Source](https://pubchem.ncbi.nlm.nih.gov/source/15645).
 However, this GitHub repository is useful for those seeking to download our non-standardized data, understand our workflow, and read our notes on copyright and reuse.
 
@@ -25,8 +23,7 @@ There are two key requirements that must be met for us to index a substance:
 
 1. The substance can be represented with the SMILES line notation. This includes most small molecule organic chemistry with some limited organometallic chemical substances.
 
-2. Chemical substances indexed have synthetic preparatory procedures and some associated experimental characterization details such as NMR, mass spec, elemental analysis, IR, or melting point. The exception is 
-with early theses (e.g., 1920s), where we indexed the substances if there was a preparation method with an associated analytical or qualitative test.
+2. Chemical substances indexed have synthetic preparatory procedures and some associated experimental characterization details such as NMR, mass spec, elemental analysis, IR, and melting point. The exception is with early theses (e.g., 1920s), where we indexed the substances if there was a preparation method with an associated analytical or qualitative test.
 
 ## What is your workflow? 
 
@@ -34,18 +31,22 @@ We are still working on creating an optimal open workflow that is highly reprodu
 
 **Main Workflow for Most Substances**
 
-1. Draw chemical structures in [ChemAxon MarvinSketch](https://chemaxon.com/products/marvin). We endeavored to accurately represent the structures as originally drawn, however in some cases we needed to standardize the structures (see Internal Standardization below).
-2. Export as ChemAxon SMILES (v19.27.0). The Daylight variant was typically used. Exceptions are when we needed to represent enhanced stereochemistry or radicals. In these cases, CXSMILES were used.  
+1. Draw chemical structures in [ChemAxon MarvinSketch](https://chemaxon.com/products/marvin). We endeavored to accurately represent the structures as originally drawn, however in some cases we needed to standardize the structures (see below).
+2. Export as ChemAxon SMILES (v19.27.0). The Daylight variant was typically used. Exceptions are when we needed to represent enhanced features such as radicals. In these cases, CXSMILES were used.  
 3. Calculate InChIKeys (v1.05 as computed by ChemAxon molconvert v19.27.0).
 4. Create a tab delimited file with an index number for each substance (i.e., UALIB-###), 
-citation, permalink to the thesis record, and substance name. The substance name given in the dissertation is used. Often the name is a systematic or common name, but other times the only name given is a non-descriptive name like "Compound 50". Since PubChem computes the IUPAC name of submitted substances, we decided not to compute systematic names locally and use the name given in the thesis. Non-descriptive names such as "Compound 50" were generally not submitted to PubChem as these have limited value to the searcher. In addition, when it was obvious that there was a structure to name mismatch, we assumed the structure was correct, and did not submit the name to PubChem. Both the non-descriptive names and mismatched names were maintained in the local raw data files for reference.
+citation, permalink to the thesis record, and substance name (or ID) from the thesis.
 5. Check for duplicates with prior indexed substances with the InChIKey using a shell sort command. Any duplicates are assigned the same local Registry ID (i.e., UALIB-###) and noted in the REGID file.
 6. Import the tabbed text file into an RDKit Pandas dataframe to calculate the 
-InChIs, InChIKeys (InChIs v1.05 as computed by RDKit 2019.09.2 release), write kekulized SMILES, and generate the SDfile. Note that enhanced stereochemistry and radicals are not represented in RDKit SMILES, but they are flagged in the connection table. 
+InChIs, InChIKeys (InChIs v1.05 as computed by RDKit 2019.09.2 release), write kekulized SMILES, and generate the SDfile. Note that enhanced features are not represented in exported RDKit SMILES, but they are flagged in the connection table. 
 7. Compare RDKit and ChemAxon InChIKeys (this helps catch any issues with SMILES parsing across the toolkits). If the InChIKeys do not match, we figure out the issue before adding the structure to the local Registry Index.
 8. Submit the SDfile to PubChem.
 9. Update the UALIB_Chemical_Structures_REGID files
 10. Create a record on our [Institutional Repository](https://ir.ua.edu/) with the SDfile and associated thesis references.
+
+**Note on Substance Names and Thesis Substance IDs**
+
+For UALIB-1 through UALIB-1364, if a descriptive name was provided for the substance, we included that in the data and in the PubChem SUBSTANCE_SYNONYM tag. However, including the substance names quickly proved too time consuming. After UALIB-1364, we included a local Substance ID (often the ID given in the thesis) instead of a name. These are useful internally only for tracking and not submitted to PubChem. Given that PubChem computes IUPAC names for submitted structures and the names provided in theses most often appeared to be a software generated systematic name, we felt it was higher value to focus on getting as many structures as we can out of the theses and discoverable as a priority for the community.
 
 **Special Case: Dative Bonds Workflow**
 
@@ -57,7 +58,7 @@ When substances were drawn as Chair conformations and complex multicyclic struct
 
 **Internal Standardization**
 
-In most cases, we were able to accurately draw the chemical substances as the author originally drew them with either standard covalent or a dative bonds. However, in some cases, we needed to make choices on how to best represent the structures such that both humans and cheminformatics software can best interpret them based on the limitations of valence rules. As such, these are the internal standardization rules we applied in an effort to best represent what the author originally meant:
+In most cases, we were able to accurately draw the chemical substances as the author originally drew them with either standard covalent or dative bonds. However, in some cases, we needed to make choices on how to best represent the structures such that both humans and cheminformatics software can best interpret them based on the limitations of valence rules and file formats. As such, these are the internal standardization rules we applied in an effort to best represent what the author originally meant:
 
 1. Phosphine Ligands (e.g., triphenylphosphine) were drawn as dative bonds to a metal.
 2. Phosphorous Selenium bonds were standardized to double bonds.
@@ -71,9 +72,9 @@ In most cases, we drew the substances however the author depicted the double bon
 
 When substances were drawn by an author with one or more stereo non-specific wavy bonds, we also reproduced these substances as drawn with the non-specific stereocenters (equivalent to having plain bonds). (See: [IUPAC Graphical Representation of Stereochemical Configuration](https://doi.org/10.1351/pac200678101897)). However, when additional information was provided such that the final product was an identified mixture of enantiomers or diasteriomers, we drew both substance configurations and combined them into one REGID as two components.
 
-Similarly, racemic, diastereomeric (dr), and enantiomeric (ee) mixtures were drawn as two components and maintained in one REGID record when it was inferred that the purified product was a mixture, and not one isolated stereoisomer. Clues that help included the substance name, the Author identifying a major/minor product in NMR spectra data, tabulating dr/ee ratios, or referring to the product in the experimental as a major product or inseparable mixture. Note: in cases where the diastereomeric mixture was not easily identifiable (i.e., not clear which stereocenter(s) or bonds to flip), we drew those as stereo non-specific single component substances.
+Similarly, racemic, diastereomeric (dr), and enantiomeric (ee) mixtures were drawn as two components and maintained in one REGID record when it was inferred that the purified product was a mixture, and not one isolated stereoisomer. Clues that help included the substance name (or ID), the Author identifying a major/minor product in NMR spectra data, tabulating dr/ee ratios, or referring to the product in the experimental as a major product or inseparable mixture. Note: in cases where the diastereomeric mixture was not easily identifiable (i.e., not clear which stereocenter(s) or bonds to flip), we drew those as stereo non-specific single component substances.
 
-PubChem does not yet support ratios of stereoisomers, so depositions do not indicate the relative stereoisomeric ratios (dr,ee).
+PubChem does not yet support enhanced stereochemistry files nor ratios of stereoisomers, so depositions do not indicate the relative stereoisomeric ratios (dr,ee).
 
 **N.B. The PubChem folks are awesome and created a custom script for our submissions that adds annotations to the PubChem Compound pages. These annotations add the thesis reference under "Synthesis".** 
 
@@ -91,12 +92,12 @@ PubChem does not yet support ratios of stereoisomers, so depositions do not indi
 MarvinSketch v19.27 .mrv, .smi, and .inchikey chemical structure files.
 
 4. **/StructureData/raw/CSV** - original indexing files which
-include ChemAxon MarvinSketch v19.27 SMILES, InChIKeys (v1.05 as computed by ChemAxon molconvert v19.27.0), our internal REGID, substance name, thesis citation, and permalink.
+include ChemAxon MarvinSketch v19.27 SMILES, InChIKeys (v1.05 as computed by ChemAxon molconvert v19.27.0), our internal REGID, substance name (or ID), thesis citation, and permalink.
 
 5. **/StructureData/rdkit_processed_csv** - same as number 2, only adding RDKit kekulized SMILES (RDKit 2019.09.2 release), calculated InChI and InChIKeys for the substances(InChIs v1.05 as computed by RDKit 2019.09.2 release). 
 
 6. **/StructureData/rdkit_processed_sdf** - SDfiles containing RDKit connection table, and 
-the following SDfile data: SMILES (RDKit 2019.09.2 release), InChI (v1.05 as computed by RDKit 2019.09.2 release), our internal REGID, substance name, thesis citation, and permalink.
+the following SDfile data: SMILES (RDKit 2019.09.2 release), InChI (v1.05 as computed by RDKit 2019.09.2 release), our internal REGID, substance name (or ID), thesis citation, and permalink.
 
 ## References
 
