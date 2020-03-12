@@ -62,7 +62,7 @@ In most cases, we were able to accurately draw the chemical substances as the au
 
 1. Phosphine Ligands (e.g., triphenylphosphine) were drawn as dative bonds to a metal.
 2. Phosphorous Selenium bonds were standardized to double bonds.
-3. Carbene to metal bonds were standardized to double bonds.
+3. Carbene metal bonds were standardized to double bonds. Complexes with carbene to non-metal and metalloids were drawn with charges.
 
 PubChem further standardizes the structures on the Compound pages.
 
