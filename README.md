@@ -5,7 +5,7 @@ Chemical Substances from The University of Alabama Dissertations and Theses
 This repository contains the machine-readable indexed chemical substances (non-standardized) 
 from The University of Alabama Dissertations and Theses (hereafter, theses). 
 
-**At the moment, there are about 1500 structures. Our goal is to share 5000 structures by June 2020**
+**At the moment, there are about 2000 structures. Our goal is to share 5000 structures by June 2020**
 
 Chemical structure data includes the name (or ID), SMILES, and InChI of synthesized chemical
 substances within the thesis along with a permalink to the thesis full-text or 
@@ -68,11 +68,11 @@ PubChem further standardizes the structures on the Compound pages.
 
 **Note on Configuration, Non-specific bonds (e.g., wavy), and Stereochemical Mixtures**
 
-In most cases, we drew the substances however the author depicted the double bond configuration and/or tetrahedral stereochemistry.
+We drew the substances however the author depicted the double bond configuration and/or tetrahedral stereochemistry. In cases where the substance name included racemic notation, (±), we drew both enantiomers for indexing (see below). However, in rare situations where the author defined the stereochemistry in the 2D depiction, but named the compound with relative notation symbols: R* or S*, we considered the depiction as the correct (absolute) stereochemistry.
 
-When substances were drawn by an author with stereo non-specific wavy bonds, we also reproduced these substances as drawn with the non-specific stereocenters (equivalent to having plain bonds). (See: [IUPAC Graphical Representation of Stereochemical Configuration](https://doi.org/10.1351/pac200678101897)). However, when additional information was provided such that the final product was not an isolated stereoisomer, and instead an identified mixture of enantiomers (ee) or diasteriomers (de), we drew both substance configurations and combined them into one REGID as two components. Clues that help included the substance name (or ID), the Author identifying a major/minor product in NMR spectra data or referring to the product in the experimental section as an inseparable mixture. Note: in cases where the diastereomeric mixture was not easily identifiable (i.e., not clear which stereocenter or bond to flip), and when the diastereomeric mixture was greater than two substance configurations (e.g., 2 double bond configurations with 4 stereoisomers), we drew those as stereo non-specific single component substances.
+When substances were drawn by an author with stereo non-specific wavy bonds, we also reproduced these substances as drawn with the non-specific stereocenters (equivalent to having plain bonds). (See: [IUPAC Graphical Representation of Stereochemical Configuration](https://doi.org/10.1351/pac200678101897)). However, when additional information was provided such that the final product was not an isolated stereoisomer, and instead an identified mixture of enantiomers (racemic/ee) or diasteriomers (de), we drew both substance configurations and combined them into one REGID as two components. Note: in cases where the diastereomeric mixture was not easily identifiable (i.e., not clear which stereocenter or bond to flip), and when the diastereomeric mixture was greater than two substance configurations (e.g., 2 double bond configurations with 4 stereoisomers), we drew those as stereo non-specific single component substances.
 
-PubChem does not yet support enhanced stereochemistry files nor ratios of stereoisomers, so depositions do not indicate the relative stereoisomeric ratios (racemate, ee, de).
+As PubChem does not support enhanced stereochemistry files nor ratios of stereoisomers, depositions do not indicate the relative stereoisomeric ratios (racemate, ee, de).
 
 Lastly, rotomers/atropisomers were drawn as regular non-specific bonds and not considered for special encoding as the available cheminformatics file formats that support atropisomers are not widely supported at this time[Algorithmic Analysis of Cahn–Ingold–Prelog Rules of Stereochemistry](https://pubs.acs.org/doi/10.1021/acs.jcim.8b00324). For example, Jmol SMILES and other SDfile annotations are not supported in PubChem.
 
