@@ -74,7 +74,7 @@ When substances were drawn by an author with stereo non-specific wavy bonds, we 
 
 As PubChem does not support enhanced stereochemistry files nor ratios of stereoisomers, depositions do not indicate the relative stereoisomeric ratios (racemate, ee, de).
 
-Lastly, rotomers/atropisomers were drawn as regular non-specific bonds and not considered for special encoding as the available cheminformatics file formats that support atropisomers are not widely supported at this time[Algorithmic Analysis of Cahn–Ingold–Prelog Rules of Stereochemistry](https://pubs.acs.org/doi/10.1021/acs.jcim.8b00324). For example, Jmol SMILES and other SDfile annotations are not supported in PubChem.
+Lastly, atropisomers were encoded as non-specific bonds since PubChem can not represent atropisomers.
 
 **N.B. The PubChem folks are awesome and created a custom script for our submissions that adds annotations to the PubChem Compound pages. These annotations add the thesis reference under "Synthesis".** 
 
