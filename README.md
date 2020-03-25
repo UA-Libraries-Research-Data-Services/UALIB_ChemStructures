@@ -52,9 +52,9 @@ For UALIB-1 through UALIB-1364, if a descriptive name was provided for the subst
 
 For organometallic dative bonds, we did not use SMILES extensions, but rather left these as disconnections (`.`). Dative bonds were then added to the RDKit processed SDfile using the PubChem nonstandard bond syntax. Note: we did experiment with using the dative bonds feature in RDKit with SMILES (`->, <-`) and V3000 molfiles, but these files did not parse correctly in PubChem. 
 
-**Special Case: Chair/Multicyclic Stereochemistry Workflow**
+**Special Case: Perspective Drawings including Chair and Fischer projection Stereochemistry Workflow**
 
-When substances were drawn as Chair conformations and complex multicyclic structures with the thesis, we used Bio-Rad's KnowItAll 2018 to determine the correct stereochemistry and export as SMILES. The Bio-Rad KnowItAll SMILES were then submitted directly to PubChem without any further processing.
+When substances were drawn as chair conformations or Fischer projections within the thesis, we used Bio-Rad's KnowItAll 2018 to determine the correct stereochemistry and export as SMILES. The Bio-Rad KnowItAll SMILES were then submitted directly to PubChem without any further processing.
 
 **Internal Standardization**
 
