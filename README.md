@@ -5,7 +5,7 @@ Chemical Substances from The University of Alabama Dissertations and Theses
 This repository contains the machine-readable indexed chemical substances (non-standardized) 
 from The University of Alabama Dissertations and Theses (hereafter, theses). 
 
-**At the moment, there are about 2000 structures. Our goal is to share 5000 structures by June 2020**
+**There are currently ~2500 chemical substances indexed across 65 theses**
 
 Chemical structure data includes the name (or ID), SMILES, and InChI of synthesized chemical
 substances within the thesis along with a permalink to the thesis full-text or 
@@ -125,7 +125,9 @@ is to allow greater discovery, use, and credit of the original authors' theses,
 not to claim any ownership of the written thesis content. The thesis authors hold the 
 copyright to their own thesis.
 
-For all substances indexed, no judgment is made on the appropriateness of the synthetic method reported, safety precautions required, nor accuracy of the characterization data. Readers need to make their own assessment of the authors claims and procedures. In addition, during indexing and processing of the chemical substances, inaccuracies may be present due to human and/or machine software error. We attempted to minimize inaccuracies and share chemical substances with fidelity to the original thesis, however, we can not make any guarantees on the accuracy of the chemical substance data. You should always check the original thesis to verify the data.
+For all substances indexed: no judgment is made on the appropriateness of the synthetic method reported, safety precautions required, nor accuracy of the characterization data. Readers need to make their own assessment of the authors claims, procedures, and necessary safety precautions.
+
+During indexing and processing of the chemical substances, inaccuracies may be present due to human and/or machine software error. We attempted to minimize inaccuracies and share chemical substances with fidelity to the original thesis, however, we can not make any guarantees on the accuracy of the chemical substance data. You should always check the original thesis to verify the data.
 
 We have only indexed and shared scientific facts (i.e., the chemical substances) and bibliographic
 information from the theses. Such scientific facts and bibliographic data are not subject 
