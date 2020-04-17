@@ -5,7 +5,7 @@ Chemical Substances from The University of Alabama Dissertations and Theses
 This repository contains the machine-readable indexed chemical substances (non-standardized) 
 from The University of Alabama Dissertations and Theses (hereafter, theses). 
 
-**There are currently ~2500 chemical substances indexed across 65 theses**
+**There are currently ~3000 chemical substances indexed across 70 theses**
 
 Chemical structure data includes the name (or ID), SMILES, and InChI of synthesized chemical
 substances within the thesis along with a permalink to the thesis full-text or 
