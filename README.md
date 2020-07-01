@@ -84,7 +84,6 @@ Lastly, atropisomers were encoded as non-specific bonds since PubChem can not re
 
  * UALIB_Chemical_Structures_REGID.ods (LibreOffice Calc)
  * UALIB_Chemical_Structures_REGID.csv (tab delimited)
- * UALIB_Chemical_Structures_REGID.sdf (SDfile) - **CAUTION:** the compiled REGID SDfile is provided as a convenience (and intended for our own internal use), please be aware that the SMILES are reprocessed from the .csv to create the RDKit connection tables and thus differ from the workflows outlined above. As a result, unknown changes to molecules may be incorporated. We recommend downloading our data directly from PubChem instead.
 
 2. **/StructureData/KnowItAll_processed_csv** - KnowItAll 2018 processed SMILES and InChI compiled CSV files submitted to PubChem. 
 
