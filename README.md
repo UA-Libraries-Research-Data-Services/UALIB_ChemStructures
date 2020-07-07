@@ -10,7 +10,8 @@ Chemical structure data includes the name (or ID), SMILES, and InChI of synthesi
 substances within the thesis along with a permalink to the thesis full-text or 
 catalog link (if not yet available online), Moreover, an SDfile containing the connection table, name (or ID), SMILES, InChI, citation, permalink, and local structure registry ID is included. PubChem is likely where you want to download our data from as PubChem handles the standardization (on Compound database) of the chemical structures:
 [The University of Alabama Libraries PubChem Data Source](https://pubchem.ncbi.nlm.nih.gov/source/15645).
-However, this GitHub repository is useful for those seeking to download our non-standardized data, understand our workflow, and read our notes on copyright and reuse.
+
+> **This GitHub repository is useful for those seeking to download our non-standardized data, understand our workflow, and read our notes on copyright and reuse. Please be aware that there may be multiple files for each thesis (e.g., corrections may be in different folders). For the most complete and latest data, please download directly from PubChem.**
 
 ## How are we registering the chemical structures?
 
