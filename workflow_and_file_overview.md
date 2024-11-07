@@ -31,7 +31,7 @@ InChIs, InChIKeys (InChIs v1.05 as computed by RDKit 2019.09.2 release), write k
 
 **Note on Substance Names and Thesis Substance IDs**
 
-For UALIB-1 through UALIB-1364, if a descriptive name was provided for the substance, we included that in the data and in the PubChem SUBSTANCE_SYNONYM tag. However, including the substance names quickly proved too time consuming. After UALIB-1364, we included a local Substance ID (often the ID given in the thesis) instead of a name. These are useful internally only for tracking and not submitted to PubChem. Given that PubChem computes IUPAC names for submitted structures and the names provided in theses most often appeared to be a software generated systematic name, we felt it was higher value to focus on getting as many structures as we can out of the theses and discoverable as a priority for the community.
+For UALIB-1 through UALIB-1364, if a descriptive name was provided for the substance in the thesis, we included that in the data and in the PubChem SUBSTANCE_SYNONYM tag. However, including the substance names quickly proved too time consuming. After UALIB-1364, we included a local Substance ID (often the ID given in the thesis) instead of a name. These are useful internally only for tracking and not submitted to PubChem. Given that PubChem computes IUPAC names for submitted structures and the names provided in theses most often appeared to be some type of systematic name (maybe?), we felt it was higher value to focus on getting as many structures as we can out of the theses and discoverable as a priority for the community.
 
 **Special Case: Dative Bonds Workflow**
 
