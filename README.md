@@ -37,9 +37,9 @@ is to allow greater discovery, use, and credit of the original authors' theses,
 not to claim any ownership of the written thesis content. The thesis authors hold the 
 copyright to their own thesis.
 
-For all substances and associated data extracted and registered: no judgment is made on the appropriateness of the synthetic method reported, safety precautions required, nor accuracy of the characterization data. Readers need to make their own assessment of the authors claims, procedures, and necessary safety precautions.
+***For all substances and associated data extracted and registered: no judgment is made on the appropriateness of the synthetic method reported, safety precautions required, nor accuracy of the characterization data. Readers need to make their own assessment of the authors claims, procedures, and necessary safety precautions.***
 
-**During extraction, registration and processing of the chemical substances and related data, inaccuracies may be present due to human and/or machine software error. We attempted to minimize inaccuracies and share chemical substances and related data with fidelity to the original thesis. Moreoever, we can not make any guarantees on the accuracy of the chemical structure data, chemical names, and other associated data from the theses. You should always check the original thesis reference to verify the data, as well as check other relevant information sources.**
+*During extraction, registration and processing of the chemical substances and related data, inaccuracies may be present due to human and/or machine software error. We attempted to minimize inaccuracies and share chemical substances and related data with fidelity to the original thesis. Moreoever, we can not make any guarantees on the accuracy of the chemical structure data, chemical names, and other associated data from the theses. You should always check the original thesis reference to verify the data, as well as check other relevant information sources.*
 
 We have only extracted and shared scientific facts (i.e., the chemical substances) and bibliographic
 information from the theses. Such scientific facts and bibliographic data are not subject 
