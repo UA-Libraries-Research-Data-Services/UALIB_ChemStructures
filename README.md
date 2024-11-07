@@ -3,9 +3,8 @@ Chemical Substances from The University of Alabama Dissertations and Theses
 
 ## What is this?
 
-[!IMPORTANT]
-> This repository contains machine-readable registered (converted to machine format and checked for uniqueness) chemical substances (non-standardized) from The University of Alabama Dissertations and Theses (hereafter, theses). The chemical data in this repository are working temporary files, and non-standardized chemical structure and related data that we created during the project. As such, it is **not recommended** to use any of this repository data. We recommend downloading the University of Alabama Libraries chemical structure data from PubChem as PubChem handles the standardization (within the Compound database) of the chemical structures:
-[The University of Alabama Libraries PubChem Data Source](https://pubchem.ncbi.nlm.nih.gov/source/15645). This repository is useful to understand our [workflow](https://github.com/UA-Libraries-Research-Data-Services/UALIB_ChemStructures/blob/master/workflow_and_file_overview.md), and read our notes on copyright and reuse. 
+> [!IMPORTANT]
+> This repository contains machine-readable registered (converted to machine format and checked for uniqueness) chemical substances (non-standardized) from The University of Alabama Dissertations and Theses (hereafter, theses). The chemical data in this repository are working temporary files, and non-standardized chemical structure and related data that we created during the project. As such, it is **not recommended** to use any of this repository data. We recommend downloading the University of Alabama Libraries chemical structure data from PubChem as PubChem handles the standardization (within the Compound database) of the chemical structures:[The University of Alabama Libraries PubChem Data Source](https://pubchem.ncbi.nlm.nih.gov/source/15645). This repository is useful to understand our [workflow](https://github.com/UA-Libraries-Research-Data-Services/UALIB_ChemStructures/blob/master/workflow_and_file_overview.md), and read our notes on copyright and reuse. 
 
 **There are currently ~3000 chemical substances registered across 73 theses**
 
@@ -40,7 +39,7 @@ copyright to their own thesis.
 
 For all substances and associated data extracted and registered: no judgment is made on the appropriateness of the synthetic method reported, safety precautions required, nor accuracy of the characterization data. Readers need to make their own assessment of the authors claims, procedures, and necessary safety precautions.
 
-**During extraction, registration and processing of the chemical substances and related data, inaccuracies may be present due to human and/or machine software error. We attempted to minimize inaccuracies and share chemical substances and related data with fidelity to the original thesis, however, we can not make any guarantees on the accuracy of the chemical data. You should always check the original thesis to verify the data, as well as check other relevant information sources.**
+**During extraction, registration and processing of the chemical substances and related data, inaccuracies may be present due to human and/or machine software error. We attempted to minimize inaccuracies and share chemical substances and related data with fidelity to the original thesis, however, we can not make any guarantees on the accuracy of the chemical data from theses. You should always check the original thesis reference to verify the data, as well as check other relevant information sources.**
 
 We have only extracted and shared scientific facts (i.e., the chemical substances) and bibliographic
 information from the theses. Such scientific facts and bibliographic data are not subject 
