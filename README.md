@@ -55,8 +55,7 @@ We have endeavored to credit each thesis author respectfully by including a cita
 this Git Repository data files, The University of Alabama Institutional Repository,
 and PubChem Substance Pages.
 
-Our intention is for you to reuse the chemical structure data 
-however you like. All chemical structure and associated data in this repository is licensed 
+All chemical structure and associated data in this repository is licensed 
 with [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/).
 Please give the original authors of the theses credit by citing their work and following 
 standard scholarly practice for reuse of the scientific literature, 
