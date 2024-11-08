@@ -57,11 +57,13 @@ and PubChem Substance Pages.
 
 Our intention is for you to reuse the chemical structure data 
 however you like. All chemical structure and associated data in this repository is licensed 
-with [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/). Please give the 
-original authors of the theses credit by citing their work and following 
+with [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+Please give the original authors of the theses credit by citing their work and following 
 standard scholarly practice for reuse of the scientific literature, 
 particularly if the data has led you to useful content within their 
 thesis (as noted above, each thesis Author holds their own copyright). If you are
 reusing a large corpus of the structures as a dataset, then it is appreciated 
-if you cite our work as we put the effort into the data compilation. Lastly, any code in this repository is licensed under the BSD-2 license.
+if you cite our work as we put the effort into the data compilation. The data within the data_analysis section was collected from Pubchem and is credited to NCBI: https://www.ncbi.nlm.nih.gov/home/about/policies/
+
+Lastly, any code in this repository is licensed under the BSD-2 license.
 
