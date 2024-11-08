@@ -56,11 +56,11 @@ this Git Repository data files, The University of Alabama Institutional Reposito
 and PubChem Substance Pages.
 
 Our intention is for you to reuse the chemical structure data 
-however you like. All chemical structure data in this repository is licensed 
+however you like. All chemical structure and associated data in this repository is licensed 
 with [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/). Please give the 
 original authors of the theses credit by citing their work and following 
 standard scholarly practice for reuse of the scientific literature, 
-particularly if the chemical structure has led you to useful content within their 
+particularly if the data has led you to useful content within their 
 thesis (as noted above, each thesis Author holds their own copyright). If you are
 reusing a large corpus of the structures as a dataset, then it is appreciated 
 if you cite our work as we put the effort into the data compilation. Lastly, any code in this repository is licensed under the BSD-2 license.
