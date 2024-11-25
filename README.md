@@ -64,5 +64,8 @@ thesis (as noted above, each thesis Author holds their own copyright). If you ar
 reusing a large corpus of the structures as a dataset, then it is appreciated 
 if you cite our work as we put the effort into the data compilation. The data within the data_analysis section was collected from Pubchem and is credited to NCBI: https://www.ncbi.nlm.nih.gov/home/about/policies/
 
-Lastly, any code in this repository is licensed under the BSD-2 license.
+Code in this repository is licensed under the BSD-2 license. Some portions are designed to work with proprietary software, such as MathWorks MATLAB and ChemAxon Marvin, which is not included under this license. Users must have valid licenses for any required proprietary software to run these portions of the code.
+
+
+
 
